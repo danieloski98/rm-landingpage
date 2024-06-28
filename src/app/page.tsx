@@ -1,8 +1,8 @@
 import Blogpost from "@/components/homepage/blogpost";
 import Discoverapp from "@/components/homepage/discoverapp";
 import Herosection from "@/components/homepage/herosection";
-import Navbar from "@/components/shared/navbar";
-import Image from "next/image";
+import Footer from "@/components/shared/footer";
+import Navbar from "@/components/shared/navbar"; 
 
 export default function Home() {
   return (
@@ -15,6 +15,9 @@ export default function Home() {
         <Blogpost />
         <div className=" w-full px-[94px] " >
           <Discoverapp />
+        </div>
+        <div className=" w-full px-[94px] " >
+          <Footer />
         </div>
       </div>
     </main>

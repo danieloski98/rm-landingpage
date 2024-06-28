@@ -34,7 +34,7 @@ export default function Discoverapp() {
                     </button>
                 </div>
             </div>
-            <div className=' w-[656px] h-[190px] absolute border border-secondary04 rounded-2xl right-5 -bottom-24 '  />
+            <div className=' w-[656px] h-[190px] absolute border border-secondary04 rounded-2xl right-5 -bottom-20 '  />
         </div>
     )
 }
