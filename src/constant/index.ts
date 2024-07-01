@@ -1,23 +1,76 @@
 export const navbarlinks = [
     {
         name: "Home",
-        link: ""
+        link: "/",
+        sublink: [],
+        external: false,
+        isDisable: false
     },
     {
         name: "Partners",
-        link: ""
+        link: "/partner",
+        sublink: [
+            {
+                name: "Become a partner",
+                link: "/partner",
+                external: false,
+                isDisable: false
+            },
+            {
+                name: "Donate",
+                link: "/partner/donate-online",
+                external: false,
+                isDisable: false
+            }, 
+        ],
+        external: false,
+        isDisable: false
     },
     {
         name: "Contact",
-        link: ""
+        link: "/contact",
+        sublink: [],
+        external: true,
+        isDisable: true
     },
     {
         name: "RHEMA Bible Training College",
-        link: ""
+        link: "/training",
+        sublink: [
+            {
+                name: "About",
+                link: "/training/about",
+                external: false,
+                isDisable: true
+            },
+            {
+                name: "Blog",
+                link: "/training/blog",
+                external: false,
+                isDisable: true
+            }, 
+            {
+                name: "Apply",
+                link: "/training/apply",
+                external: false,
+                isDisable: true
+            }, 
+            {
+                name: "Login",
+                link: "https://www.google.com",
+                external: true,
+                isDisable: true
+            }, 
+        ],
+        external: false,
+        isDisable: true
     },
     {
         name: "RHEMA Connect",
-        link: ""
+        link: "/connect",
+        sublink: [],
+        external: true,
+        isDisable: true
     }
 ]
 
@@ -73,4 +126,19 @@ export const footerlinks = [
             }
         ] 
     }, 
+]
+
+export const partnerlinks = [
+    {
+        name: "Individual Partnership",
+        link: ""
+    },
+    {
+        name: "Corporate Partnership",
+        link: ""
+    },
+    {
+        name: "Donate to RHEMA MENA",
+        link: ""
+    },
 ]

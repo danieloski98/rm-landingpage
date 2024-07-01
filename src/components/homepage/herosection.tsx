@@ -18,7 +18,7 @@ export default function Herosection() {
     
     return (
         <Homelayout>
-            <div className=' w-[534px] h-[182px] rounded-2xl bg-primary03 absolute top-0 left-[50px] ' />
+            <div className=' w-[534px] h-[182px] rounded-2xl bg-primary03 z-10 absolute top-0 left-[50px] ' />
             <div className=' w-[537px] h-[162px] rounded-t-2xl border border-b-0 border-secondary04 absolute bottom-0 right-0 ' />
             <div className=' w-full text-primary pl-[116px] z-10 relative py-[115px] ' >
                 <h1 className=' text-5xl leading-[64px] font-bold ' >RHEMA MENA IS FOR YOU!</h1>
