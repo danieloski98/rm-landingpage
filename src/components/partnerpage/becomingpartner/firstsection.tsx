@@ -3,8 +3,7 @@ import Homelayout from '../../shared/homelayout'
 
 export default function Firstsection() {
     return (
-        <Homelayout>
-            <div className=' w-[534px] h-[107px] rounded-2xl bg-primary03 z-10 absolute top-0 left-[50px] ' />
+        <Homelayout first={true} redbgHeight='h-[107px]' >
             <div className=' w-full text-primary pl-[116px] z-10 relative py-[10px] ' >
                 <h1 className=' text-[64px] leading-[80px] font-bold ' >Become a Partner</h1>
                 <p className=' text-secondary01 leading-6 mt-5 ' >Partnership</p>

@@ -24,7 +24,9 @@ const config: Config = {
         secondary10: "#494949",
         grey500: "#919EAB",
         warning01: "#FFF7CD",
-        light02: "#212B36"
+        light02: "#212B36",
+        dark01: "#3B3B3B",
+        dark02: "#919EAB"
       }
     },
   },

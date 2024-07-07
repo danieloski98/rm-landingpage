@@ -142,3 +142,33 @@ export const partnerlinks = [
         link: ""
     },
 ]
+
+export const contactinfo = [
+    {
+        name: "RHEMA LEBANON",
+        details: "Reach us from anywhere in the Middle East & North Africa Region",
+        address: {
+            name: "RHEMA Lebanon Biblical training Center",
+            contact_location: "+961 81 206 946",
+            email: "info@rhemalebanon.com"
+        }
+    },
+    {
+        name: "RHEMA EGYPT",
+        details: "Reach us from anywhere in the Middle East & North Africa Region",
+        address: {
+            name: "RHEMA Lebanon Biblical training Center",
+            contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
+            email: "info@rhemaegypt.com"
+        }
+    },
+    {
+        name: "RHEMA TURKEY",
+        details: "Reach us from anywhere in the Middle East & North Africa Region",
+        address: {
+            name: "RHEMA Lebanon Biblical training Center",
+            contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
+            email: "lebanon@rhematurkey.com"
+        }
+    }
+]
