@@ -31,7 +31,7 @@ export const navbarlinks = [
         link: "/contact",
         sublink: [],
         external: true,
-        isDisable: true
+        isDisable: false
     },
     {
         name: "RHEMA Bible Training College",
@@ -41,7 +41,7 @@ export const navbarlinks = [
                 name: "About",
                 link: "/training/about",
                 external: false,
-                isDisable: true
+                isDisable: false
             },
             {
                 name: "Blog",
@@ -53,7 +53,7 @@ export const navbarlinks = [
                 name: "Apply",
                 link: "/training/apply",
                 external: false,
-                isDisable: true
+                isDisable: false
             }, 
             {
                 name: "Login",
@@ -63,7 +63,7 @@ export const navbarlinks = [
             }, 
         ],
         external: false,
-        isDisable: true
+        isDisable: false
     },
     {
         name: "RHEMA Connect",
@@ -171,4 +171,23 @@ export const contactinfo = [
             email: "lebanon@rhematurkey.com"
         }
     }
+]
+
+export const tuitionfee = [
+    {
+        name: "Application fee",
+        fee: "$10"
+    },
+    {
+        name: "Enrollment fee",
+        fee: "$100"
+    }, 
+    {
+        name: "Application fee",
+        fee: "$10"
+    }, 
+    {
+        name: "Module Tution payment",
+        fee: "$5"
+    }, 
 ]

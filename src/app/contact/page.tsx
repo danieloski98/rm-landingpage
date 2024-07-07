@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function ContactPage() {
     return (
-        <div className=' w-full ' >
+        <div className=' w-full px-[94px] ' >
             <Homelayout first={true} redbgHeight='h-[107px]' >
                 <div className=' w-full text-primary px-[116px] z-10 relative py-[10px] ' >
                     <h1 className=' text-[64px] leading-[80px] font-bold ' >Reach RHEMA MENA</h1>

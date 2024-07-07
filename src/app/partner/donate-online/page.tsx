@@ -4,8 +4,8 @@ import React from 'react'
 
 export default function DonateOnline() {
     return (
-        <div className=' w-full ' >
-            <div className=" w-full px-[94px] " >
+        <div className=' w-full px-[94px]' >
+            <div className=" w-full " >
                 <Formcomponent />
             </div>
                 <Enrollcomponent />

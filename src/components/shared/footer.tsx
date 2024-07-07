@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import Newsletter from './newsletter'
 
 interface IProps {
     hide?: boolean
@@ -55,16 +56,7 @@ export default function Footer({ hide }: IProps) {
                         <p className=' text-sm leading-[22px] ' >+961 81 206 946</p>
                         <p className=' text-sm leading-[22px] ' ><span className='text-secondary02 ' >Email: </span>matt@RhemaConnect.com</p>
                     </div>
-                    <div className=' flex flex-col gap-1 text-secondary01 ' >
-                        <h6 className=' font-bold text-lg leading-[28px] ' >Stay updated with our newsletter</h6>
-                        <p className=' text-sm leading-[22px] text-secondary02 ' >Contact us</p>
-                        <div className=' flex gap-2 mt-3 ' >
-                            <input placeholder='Your email address' className=' w-[267px] h-[48px] border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] ' />
-                            <button className=' text-sm leading-[22px] text-secondary05  border-primary bg-primary h-[48px] px-4 rounded-[8px] ' >
-                                Join
-                            </button>
-                        </div>
-                    </div>
+                    <Newsletter />
                     <div className=' flex flex-col gap-1 text-white ' >
                         <p className=' text-sm leading-[22px] ' >Download the <br /> Student App</p>
                         <div className=' mt-3 flex flex-col gap-4 ' >

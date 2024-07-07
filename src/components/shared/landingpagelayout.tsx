@@ -15,7 +15,7 @@ export default function Landingpagelayout({
     return (
         <main className="flex w-screen overflow-x-hidden min-h-screen flex-col items-center ">
             <Navbar />
-            <div className=" w-full " >
+            <div className=" w-full pt-8 " >
                 {children}
                 <div className=" w-full px-[94px] " >
                     <Footer hide={hidefooterinfo} />

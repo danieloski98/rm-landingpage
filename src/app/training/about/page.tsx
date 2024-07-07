@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className=' w-full ' >
+        <div className=' w-full px-[94px] ' >
             <Homelayout first={true} >
                 <div className=' w-full text-primary px-[116px] z-10 relative py-[115px] ' >
                     <h1 className=' text-5xl leading-[64px] font-bold ' >Bible Training Campuses</h1>
@@ -44,7 +44,7 @@ export default function About() {
                     </div>
                 </div>
             </Homelayout>
-            <Enrollcomponent />
+            <Enrollcomponent shownewletter={true} />
         </div>
     )
 }
