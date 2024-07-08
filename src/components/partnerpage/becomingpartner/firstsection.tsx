@@ -1,16 +1,16 @@
 import React from 'react'
 import Homelayout from '../../shared/homelayout'
+import HeaderCompontent from '@/components/shared/header'
 
 export default function Firstsection() {
     return (
-        <Homelayout first={true} redbgHeight='h-[107px]' >
-            <div className=' w-full text-primary pl-[116px] z-10 relative py-[10px] ' >
-                <h1 className=' text-[64px] leading-[80px] font-bold ' >Become a Partner</h1>
-                <p className=' text-secondary01 leading-6 mt-5 ' >Partnership</p>
+        <Homelayout first={true} redbgHeight=' lg:h-[107px] h-[51px] ' >
+            <div className=' w-full text-primary lg:pl-[116px] z-10 relative py-[10px] ' >
+                <HeaderCompontent title='Become a Partner' body='Partnership' />
                 <div className=' w-full pt-16 flex flex-col ' >
-                    <h3 className=' text-center font-bold text-[32px] mx-auto w-fit leading-[48px] pb-1 border-b border-primary03 ' >A LETTER TO OUR PARTNERS FROM KENNETH W. HAGIN</h3>
-                    <div className=' w-full flex mt-10 gap-8 ' >
-                        <div className=' w-[404px] h-[270px] rounded-2xl bg-green-500 ' >
+                    <h3 className=' text-center font-bold text-lg lg:text-[32px] lg:mx-auto lg:w-fit leading-[18px] lg:leading-[48px] pb-1 border-b border-primary03 ' >A LETTER TO OUR PARTNERS FROM KENNETH W. HAGIN</h3>
+                    <div className=' w-full flex lg:flex-row flex-col mt-10 gap-8 ' >
+                        <div className=' w-full lg:w-[404px] h-[229.23px] lg:h-[270px] rounded-2xl bg-green-500 ' >
 
                         </div>
                         <div className=' flex flex-col flex-1 ' >
