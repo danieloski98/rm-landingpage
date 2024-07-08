@@ -17,14 +17,18 @@ export default function Navbar() {
         link: string
     }) => {
 
+
         if (pathname?.includes(item?.link) && item?.link !== "/") {
             return "border-secondary01 text-white "
         } else if (item?.link === pathname) {
             return "border-secondary01 text-white "
         } else {
+        } else {
             return "border-transparent text-secondary02"
         }
+        }
 
+    } 
     } 
 
     // const clickHandler = (item: string) => {
@@ -34,15 +38,6 @@ export default function Navbar() {
     //         setShow(item)
     //     }
     // }
-
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
-        } else {
-            setShow(item)
-        }
-    }
 
     return (
         <div className="w-auto h-auto mb-4">
