@@ -16,25 +16,24 @@ export default function Navbar() {
         name: string;
         link: string
     }) => {
-        
+
         if (pathname?.includes(item?.link) && item?.link !== "/") {
             return "border-secondary01 text-white "
         } else if (item?.link === pathname) {
             return "border-secondary01 text-white "
-        }  else {
-            return "border-transparent text-secondary02"
-        } 
-
-    }
-
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
         } else {
-            setShow(item)
+            return "border-transparent text-secondary02"
         }
-    }
+
+    } 
+
+    // const clickHandler = (item: string) => {
+    //     if (show) {
+    //         setShow("")
+    //     } else {
+    //         setShow(item)
+    //     }
+    // }
 
     return (
         <div className=' w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end sm:bg-[#212B36] lg:bg-transparent ' >
@@ -46,15 +45,17 @@ export default function Navbar() {
                 <div className=' pr-24 hidden lg:flex gap-4 ' >
                     {navbarlinks?.map((item, index) => (
                         <div key={index} className={` relative `} >
-                            <Link  className={` ${activeLink(item)} border-t-[2px] pt-1 text-sm hover:text-white cursor-pointer ${item?.sublink?.length > 0 ? "" : item?.isDisable ? " " : "relative z-30 "} `} href={item?.link} >{item?.name}</Link>
+                            <Link className={` ${activeLink(item)} border-t-[2px] pt-1 text-sm hover:text-white cursor-pointer ${item?.sublink?.length > 0 ? "" : item?.isDisable ? " " : "relative z-30 "} `} href={item?.link} >{item?.name}</Link>
                             <div onMouseEnter={() => setShow((item?.sublink?.length > 0 && !item?.isDisable) ? item.name : "")} onMouseLeave={() => setShow("")} className={` w-[150px] h-full absolute z-20 top-0 ${show === item?.name ? " bg-transparent " : ""} rounded-2xl ${item?.isDisable ? " cursor-not-allowed " : ""} `} >
-                                {show === item?.name && (
-                                    <div className=' w-full px-4 py-3 flex flex-col mt-8 bg-secondary10 gap-2 rounded-2xl  ' >
-                                        {item?.sublink?.map((subitem, subindex) => (
-                                            <Link className={` ${subitem?.link === pathname ? " text-primary03 " : "border-transparent text-primary hover:text-white "} relative pt-1 text-sm   `} key={subindex} href={subitem?.link} >{subitem?.name}</Link>
-                                        ))}
-                                    </div>
-                                )}
+                                <div className=' pt-8 ' >
+                                    {show === item?.name && (
+                                        <div className=' w-full px-4 py-3 flex flex-col bg-secondary10 gap-2 rounded-2xl  ' >
+                                            {item?.sublink?.map((subitem, subindex) => (
+                                                <Link className={` ${subitem?.link === pathname ? " text-primary03 " : "border-transparent text-primary hover:text-white "} relative pt-1 text-sm   `} key={subindex} href={subitem?.link} >{subitem?.name}</Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}
