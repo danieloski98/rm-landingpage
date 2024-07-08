@@ -56,6 +56,12 @@ export const navbarlinks = [
                 isDisable: false
             }, 
             {
+                name: "MENA Prayers",
+                link: "/training/prayers",
+                external: false,
+                isDisable: false
+            }, 
+            {
                 name: "Login",
                 link: "https://www.google.com",
                 external: true,

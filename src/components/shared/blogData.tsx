@@ -1,7 +1,6 @@
 import React from 'react'
-import BlogData from '../shared/blogData'
 
-export default function Blogpost() {
+export default function BlogData() {
 
     const BlogCard = () => {
         return (
@@ -27,22 +26,11 @@ export default function Blogpost() {
         )
     }
 
-    return (
-        <div className=' w-full flex justify-center bg-secondary04 px-[210px] py-20 relative text-primary ' > 
-            <div className=' max-w-[1181px] w-full bg-secondary05 p-12 rounded-2xl relative ' >
-                <div className=' w-[55%] h-[75%] rounded-tl-2xl rounded-br-2xl absolute top-0 left-0 bg-secondary10 '  />
-                <div className=' w-[569px] h-[266px] bg-opacity-10 bg-primary03 rounded-2xl absolute -bottom-10 right-5 ' />
-                <div className=' relative z-10 w-full flex justify-between items-center ' >
-                    <div>
-                        <h1 className=' text-2xl leading-9 font-bold ' >Blog Post</h1>
-                        <p className=' text-sm leading-[22px] ' >Get edified with articles on various topics</p>
-                    </div>
-                    <button className=' text-sm leading-[22px] border border-primary h-[38px] px-4 rounded-[32px] ' >
-                        View all
-                    </button>
-                </div>
-                <BlogData />
-            </div>
+    return ( 
+        <div className=' relative w-full flex gap-4 mt-8  ' >
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
         </div>
     )
 }
