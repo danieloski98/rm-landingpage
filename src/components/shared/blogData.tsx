@@ -27,7 +27,7 @@ export default function BlogData() {
     }
 
     return ( 
-        <div className=' relative w-full flex gap-4 mt-8  ' >
+        <div className=' relative w-full flex lg:flex-row flex-col gap-4 mt-8  ' >
             <BlogCard />
             <BlogCard />
             <BlogCard />

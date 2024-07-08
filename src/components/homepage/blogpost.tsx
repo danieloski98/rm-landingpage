@@ -28,9 +28,9 @@ export default function Blogpost() {
     }
 
     return (
-        <div className=' w-full flex justify-center bg-secondary04 px-[210px] py-20 relative text-primary ' > 
-            <div className=' max-w-[1181px] w-full bg-secondary05 p-12 rounded-2xl relative ' >
-                <div className=' w-[55%] h-[75%] rounded-tl-2xl rounded-br-2xl absolute top-0 left-0 bg-secondary10 '  />
+        <div className=' w-full flex justify-center lg:bg-secondary04 lg:px-[210px] py-20 relative text-primary ' > 
+            <div className=' max-w-[1181px] w-full bg-secondary05 lg:p-12 rounded-2xl relative ' >
+                <div className=' w-[55%] h-[60%] lg:h-[75%] rounded-tl-2xl rounded-br-2xl absolute top-0 left-0 bg-secondary10 '  />
                 <div className=' w-[569px] h-[266px] bg-opacity-10 bg-primary03 rounded-2xl absolute -bottom-10 right-5 ' />
                 <div className=' relative z-10 w-full flex justify-between items-center ' >
                     <div>

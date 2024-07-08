@@ -8,7 +8,7 @@ export default function Apply() {
     return (
         <div className=' w-full px-[94px]' >
             <Homelayout first={true} redbgHeight='h-[107px]' >
-                <div className=' w-full text-primary px-[116px] z-10 relative py-[10px] ' >
+                <div className=' w-full text-primary lg:px-[116px] z-10 relative py-[10px] ' >
                     <h1 className=' text-[64px] leading-[80px] font-bold ' >Tuition & Cost</h1>
                     <p className=' text-secondary01 leading-6 mt-5 ' >RHEMA MENA</p>
                     <div className=' w-full flex justify-center ' >

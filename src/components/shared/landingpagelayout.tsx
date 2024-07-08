@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './navbar'
-import Footer from './footer'
-import { boolean } from 'zod';
+import Footer from '../footer' 
 
 export default function Landingpagelayout({
     children,
@@ -15,10 +14,10 @@ export default function Landingpagelayout({
     return (
         <main className="flex w-screen overflow-x-hidden min-h-screen flex-col items-center ">
             <Navbar />
-            <div className=" w-full pt-8 " >
+            <div className=" w-full pt-8 lg:px-0 px-6 " >
                 {children}
-                <div className=" w-full px-[94px] " >
-                    <Footer hide={hidefooterinfo} />
+                <div className=" w-full lg:px-[94px] " >
+                    <Footer />
                 </div>
             </div>
         </main>
