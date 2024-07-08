@@ -1,14 +1,14 @@
 import Contact from '@/components/contact'
+import HeaderCompontent from '@/components/shared/header'
 import Homelayout from '@/components/shared/homelayout'
 import React from 'react'
 
 export default function ContactPage() {
     return (
-        <div className=' w-full px-[94px] ' >
-            <Homelayout first={true} redbgHeight='h-[107px]' >
-                <div className=' w-full text-primary px-[116px] z-10 relative py-[10px] ' >
-                    <h1 className=' text-[64px] leading-[80px] font-bold ' >Reach RHEMA MENA</h1>
-                    <p className=' text-secondary01 leading-6 mt-5 ' >Reach us from anywhere in the Middle East & North Africa Region</p> 
+        <div className=' w-full lg:px-[94px] ' >
+            <Homelayout first={true} redbgHeight='lg:h-[107px] h-[51px] ' >
+                <div className=' w-full text-primary lg:px-[116px] z-10 relative py-[10px] ' >
+                    <HeaderCompontent title='Reach RHEMA MENA' body='Reach us from anywhere in the Middle East & North Africa Region' /> 
                     <Contact />
                 </div>
             </Homelayout>

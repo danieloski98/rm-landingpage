@@ -51,7 +51,7 @@ export default function Navbar() {
                                     {show === item?.name && (
                                         <div className=' w-full px-4 py-3 flex flex-col bg-secondary10 gap-2 rounded-2xl  ' >
                                             {item?.sublink?.map((subitem, subindex) => (
-                                                <Link className={` ${subitem?.link === pathname ? " text-primary03 " : "border-transparent text-primary hover:text-white "} relative pt-1 text-sm   `} key={subindex} href={subitem?.link} >{subitem?.name}</Link>
+                                                <Link className={` ${subitem?.link === pathname ? " text-primary03 " : "border-transparent text-primary hover:text-white "} relative pt-1 text-sm cursor-pointer `} key={subindex} href={subitem?.link} >{subitem?.name}</Link>
                                             ))}
                                         </div>
                                     )}

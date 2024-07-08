@@ -1,4 +1,5 @@
 import Enrollcomponent from '@/components/shared/enrollcomponent'
+import HeaderCompontent from '@/components/shared/header'
 import Homelayout from '@/components/shared/homelayout'
 import { tuitionfee } from '@/constant'
 import { HeartCircle } from '@/svg'
@@ -6,11 +7,10 @@ import React from 'react'
 
 export default function Apply() {
     return (
-        <div className=' w-full px-[94px]' >
-            <Homelayout first={true} redbgHeight='h-[107px]' >
+        <div className=' w-full lg:px-[94px]' >
+            <Homelayout first={true} redbgHeight='lg:h-[107px] h-[51px] ' >
                 <div className=' w-full text-primary lg:px-[116px] z-10 relative py-[10px] ' >
-                    <h1 className=' text-[64px] leading-[80px] font-bold ' >Tuition & Cost</h1>
-                    <p className=' text-secondary01 leading-6 mt-5 ' >RHEMA MENA</p>
+                    <HeaderCompontent title='Tuition & Cost' body='RHEMA MENA' /> 
                     <div className=' w-full flex justify-center ' >
                         <div className=' max-w-[880px] w-full pt-12 gap-10 flex flex-col ' >
                             <div className=' w-full flex flex-col gap-6 ' >
@@ -21,9 +21,11 @@ export default function Apply() {
                                     </div>
                                 ))}
                             </div>
-                            <div className=' w-full border border-secondary04 rounded-2xl p-6 flex justify-between items-center ' >
+                            <div className=' w-full border border-secondary04 rounded-2xl p-6 flex lg:flex-row flex-col lg:justify-between lg:items-center lg:gap-0 gap-4 ' >
                                 <div className=' flex gap-3 items-center ' >
-                                    <HeartCircle />
+                                    <div className=' w-fit lg:block hidden ' >
+                                        <HeartCircle />
+                                    </div>
                                     <div className=' flex flex-col ' >
                                         <h4 className=' text-2xl leading-9 font-bold ' >Support for scholarships</h4>
                                         <p className=' leading-6 ' ><span className=' text-lg font-bold ' >$78</span> per month for 24 months</p>

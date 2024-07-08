@@ -7,11 +7,16 @@ import Image from 'next/image'
 export default function Contact() {
     return (
         <div className=' w-full py-20 ' >
-            <div className=' relative h-full ' > 
-                <CustomInput leftIcon={<SearchIcon />} placeholder='Search by Campus, Country...' width='427px' height='56px' />
+            <div className=' relative h-full ' >
+                <div className=' lg:flex hidden ' > 
+                    <CustomInput leftIcon={<SearchIcon />} placeholder='Search by Campus, Country...' width='427px' height='56px' />
+                </div>
+                <div className=' lg:hidden ' > 
+                    <CustomInput leftIcon={<SearchIcon />} placeholder='Search by Campus, Country...' width='100%' height='56px' />
+                </div>
                 <div className=' w-full mt-8 py-10 flex flex-col gap-12 ' >
                     {contactinfo?.map((item, index) => (
-                        <div className=' w-full px-8 border-b border-secondary04 pb-12 flex justify-between ' >
+                        <div className=' w-full px-8 border-b border-secondary04 pb-12 flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between ' >
                             <div className=' max-w-[358px] flex flex-col gap-5 ' >
                                 <div className=' text-primary flex gap-4 items-center ' >
                                     <h4 className=' text-2xl font-bold ' >{item?.name}</h4>
@@ -21,7 +26,7 @@ export default function Contact() {
                                 </div>
                                 <p className=' leading-6' >{item?.details}</p>
                                 <div className=' flex gap-4 items-center ' >
-                                    <LocationIcon/>
+                                    <LocationIcon />
                                     <p className=' underline leading-6 text-sm ' >Locate Campus</p>
                                     <p className=' underline leading-6 text-sm ' >Send Message</p>
                                 </div>
