@@ -18,53 +18,7 @@ interface INavlinks {
 const NavLink = ({name, link, sublink, external, isDisable }: INavlinks) => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-"use client";
-import { navbarlinks } from "@/constant";
-import { MenuIcon } from "@/svg";
-import { ArrowDown2, ArrowUp2, CloseCircle } from "iconsax-react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React, { useState } from "react";
 
-interface INavlinks {
-    name: string;
-    link: string;
-    sublink: Array<{ name: string; link: string, isDisbale?: boolean, external: boolean }>;
-    external: boolean;
-    isDisable: boolean;
-}
-
-const NavLink = ({name, link, sublink, external, isDisable }: INavlinks) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const pathname = usePathname();
-
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
-        } else {
-            setShow(item)
-        }
-    }
-
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
-        } else {
-            setShow(item)
-        }
-    }
-
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
-        } else {
-            setShow(item)
-        }
-    }
 
     return (
         <div className="w-auto h-auto mb-4">
@@ -99,71 +53,6 @@ const NavLink = ({name, link, sublink, external, isDisable }: INavlinks) => {
     )
 }
 
-export default function Navbar() {
-  const [show, setShow] = useState("");
-  const [showDrawer, setShowDrawer] = React.useState(false);
-
-  const pathname = usePathname();
-
-  const activeLink = (item: {
-    name: string;
-    link: string;
-  }) => {
-    if (pathname?.includes(item?.link) && item?.link !== "/") {
-      return "border-secondary01 text-white ";
-    } else if (item?.link === pathname) {
-      return "border-secondary01 text-white ";
-    } else {
-      return "border-transparent text-secondary02";
-    }
-  };
-
-    return (
-        <div className="w-auto h-auto mb-4">
-            <div className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
-                {sublink.length < 1 && (
-                    <Link className={`font-semibold text-md ${pathname.includes(name.toLowerCase())  ? "text-red-300" : "text-white"}`} href={link}>{name}</Link>
-                )}
-                {sublink.length > 0 && (
-                    <p className="font-semibold text-md">{name}</p>
-                )}
-                {sublink?.length > 0 && (
-                    <>
-                        {isOpen && <ArrowUp2 variant="Outline" size={'20px'} color="white" className="ml-3" />}
-                        {!isOpen && <ArrowDown2 variant="Outline" size={'20px'} color="white" className="ml-3" />}
-                    </>
-                )}
-        <div className="w-auto h-auto mb-4">
-            <div className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
-                {sublink.length < 1 && (
-                    <Link className={`font-semibold text-md ${pathname.includes(name.toLowerCase())  ? "text-red-300" : "text-white"}`} href={link}>{name}</Link>
-                )}
-                {sublink.length > 0 && (
-                    <p className="font-semibold text-md">{name}</p>
-                )}
-                {sublink?.length > 0 && (
-                    <>
-                        {isOpen && <ArrowUp2 variant="Outline" size={'20px'} color="white" className="ml-3" />}
-                        {!isOpen && <ArrowDown2 variant="Outline" size={'20px'} color="white" className="ml-3" />}
-                    </>
-                )}
-            </div>
-            {sublink?.length > 0 && isOpen && (
-                <div className="flex flex-col mt-4 ml-6">
-                    {sublink?.map((item, index) => (
-                        <Link
-                            className={`font-normal text-sm mb-3 ${pathname.includes(name.toLowerCase())  ? "text-red-300" : "text-white"}`}
-                            href={item?.link}
-                            key={index}
-                        >
-                            - {item?.name}
-                        </Link>
-                    ))}
-                </div>
-            )}
-        </div>
-    )
-}
 
 export default function Navbar() {
   const [show, setShow] = useState("");
@@ -270,9 +159,6 @@ export default function Navbar() {
                 <NavLink key={index.toString()} {...item} />
             ))}
         </div>
-      )}
-    </div>
-  );
       )}
     </div>
   );
