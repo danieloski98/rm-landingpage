@@ -90,7 +90,24 @@ export default function Contact() {
                             <p className='px-5 text-sm leading-[22px] pb-3 ' >Do not hesitate to contact us, we are always happy to talk to you.</p>
                             <form className=' w-full flex flex-col overflow-y-auto max-h-[748px] gap-6 pt-2 px-5 mb-[80px] pb-5 flex-1 ' >
                                 <div className=' w-full mt-4 ' >
-                                    <CustomInput placeholder='Your First & Last Name' label='Title (required)' width='100%' />
+                                    <CustomInput placeholder='Choose Title' select optionData={[
+                                        {
+                                            name: "Mr",
+                                            value: "Mr"
+                                        }, 
+                                        {
+                                            name: "Mrs",
+                                            value: "Mrs"
+                                        },
+                                        {
+                                            name: "Miss",
+                                            value: "Miss"
+                                        }, 
+                                        {
+                                            name: "Master",
+                                            value: "Master"
+                                        }
+                                    ]} label='Title (required)' width='100%' />
                                 </div>
                                 <div className=' w-full grid grid-cols-1 lg:grid-cols-2 gap-6 ' >
                                     <CustomInput placeholder='Your First Name' label='First Name (required)' width='100%' />
@@ -98,11 +115,28 @@ export default function Contact() {
                                     <CustomInput placeholder='Your email address' label='Email (required)' width='100%' />
                                     <CustomInput placeholder='Your phone number' label='Phone' width='100%' />
                                 </div>
-                                <CustomInput placeholder='Regular Partnership' label='Campus concerned (required)' width='100%' />
+                                <CustomInput placeholder='Choose Title' select optionData={[
+                                        {
+                                            name: "University One",
+                                            value: "University One"
+                                        }, 
+                                        {
+                                            name: "University Two",
+                                            value: "University Two"
+                                        },
+                                        {
+                                            name: "University Three",
+                                            value: "University Three"
+                                        }, 
+                                        {
+                                            name: "University Four",
+                                            value: "University Four"
+                                        }
+                                    ]} label='Campus concerned (required)' width='100%' />
                                 <CustomInput placeholder='The object of contact' label='Topic' width='100%' />
-                                <CustomInput placeholder='Your message' textarea={true} className=' h-[128px] pt-4 ' label='Message (required)' width='100%' />
+                                <CustomInput placeholder='Your message' textarea={true} className=' pt-4 ' label='Message (required)' width='100%' />
                                  
-                                <div className="absolute bg-dark01 bottom-0 rounded-b-[16px] left-0 px-4 h-[80px] border-t border-gray-200 w-full flex justify-end items-center gap-3">
+                                <div className="absolute bg-dark01 bottom-0 rounded-b-[16px] left-0 px-4 h-[80px] border-t border-secondary04 w-full flex justify-end items-center gap-3">
                                     <button className=' text-sm leading-[22px] border border-primary03 bg-primary03 h-[48px] px-4 rounded-[8px] ' >
                                         Send Message
                                     </button>
