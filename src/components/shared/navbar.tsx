@@ -1,5 +1,6 @@
 "use client"
 import { navbarlinks } from '@/constant'
+import { MenuIcon } from '@/svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -27,13 +28,13 @@ export default function Navbar() {
     }
 
     return (
-        <div className=' w-full h-[167px] relative px-8 pb-4 flex items-end ' >
+        <div className=' w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end ' >
             <div className=' w-fit absolute top-0 right-16 ' >
                 <Image src={"/images/home/navstroke.svg"} width={656} height={122} alt='nav' />
             </div>
-            <div className=' w-full flex justify-between ' >
+            <div className=' w-full lg:py-0 py-3 flex justify-between lg:items-start items-center ' >
                 <Image src={"/images/logo.svg"} width={171} height={59} alt='logo' />
-                <div className=' pr-24 flex gap-4 ' >
+                <div className=' pr-24 hidden lg:flex gap-4 ' >
                     {navbarlinks?.map((item, index) => (
                         <div key={index} className={` relative `} >
                             <Link  className={` ${activeLink(item)} border-t-[2px] pt-1 text-sm hover:text-white cursor-pointer ${item?.sublink?.length > 0 ? "" : item?.isDisable ? " " : "relative z-30 "} `} href={item?.link} >{item?.name}</Link>
@@ -48,6 +49,9 @@ export default function Navbar() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className=' lg:hidden flex ' >
+                    <MenuIcon />
                 </div>
             </div>
         </div>

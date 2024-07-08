@@ -22,30 +22,30 @@ export default function PrayerCard({ limit }: IProps) {
     return (
         <>
             {limit && (
-                <div className=' w-fit flex mt-8 justify-between gap-12 items-center ' >
+                <div className=' w-fit flex lg:flex-row flex-col mt-8 lg:justify-between gap-12 lg:items-center ' >
                     <div className=' w-fit flex flex-col gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] bg-secondary04 ' />
+                    <div className=' w-[1px] h-[160px] lg:block hidden bg-secondary04 ' />
                     <div className=' w-fit flex flex-col gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] bg-secondary04 ' />
-                    <div className=' w-fit flex flex-col gap-6  ' >
+                    <div className=' w-[1px] h-[160px] lg:block hidden bg-secondary04 ' />
+                    <div className=' w-fit lg:flex hidden flex-col  gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] bg-secondary04 ' />
-                    <div className=' w-fit flex flex-col gap-6  ' >
+                    <div className=' w-[1px] h-[160px] lg:block hidden bg-secondary04 ' />
+                    <div className=' w-fit lg:flex hidden flex-col  gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                     </div>
                 </div>
             )}
             {!limit && (
-                <div className=' w-fit flex justify-between gap-12 relative ' > 
+                <div className=' w-fit flex lg:flex-row flex-col lg:justify-between gap-12 relative ' > 
                     <div className=' w-[537px] h-[182px] rounded-2xl bg-secondary10 z-0 absolute -top-8 -left-10 ' />
                     <div className=' w-fit flex relative flex-col gap-6  ' >
                         <LocationCard />
@@ -54,21 +54,21 @@ export default function PrayerCard({ limit }: IProps) {
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] relative bg-secondary04 ' />
+                    <div className=' w-[1px] h-[160px] lg:block hidden relative bg-secondary04 ' />
                     <div className=' w-fit flex relative flex-col gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] relative bg-secondary04 ' />
+                    <div className=' w-[1px] h-[160px] lg:block hidden relative bg-secondary04 ' />
                     <div className=' w-fit flex relative flex-col gap-6  ' >
                         <LocationCard />
                         <LocationCard />
                         <LocationCard />
                         <LocationCard />
                     </div>
-                    <div className=' w-[1px] h-[160px] relative bg-secondary04 ' />
+                    <div className=' w-[1px] h-[160px] lg:block hidden relative bg-secondary04 ' />
                     <div className=' w-fit flex relative flex-col gap-6  ' >
                         <LocationCard />
                         <LocationCard />
