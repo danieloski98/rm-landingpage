@@ -12,7 +12,7 @@ export default function Landingpagelayout({
     hidefooterinfo?: boolean
 }>) {
     return (
-        <main className="flex w-screen overflow-x-hidden h-auto flex-col items-center ">
+        <main className="flex w-full overflow-x-hidden h-auto flex-col items-center ">
             <Navbar />
             <div className=" w-full pt-8 lg:px-0 px-6 " >
                 {children}
