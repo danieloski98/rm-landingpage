@@ -6,6 +6,7 @@ interface IProps {
     height?: string;
     label?: string;
     placeholder?: string;
+    textarea?: boolean;
     leftIcon?: React.ReactNode;
     [x: string]: any;
 }
@@ -16,6 +17,7 @@ export default function CustomInput({
     height,
     label,
     placeholder,
+    textarea,
     leftIcon,
     ...rest
 }: IProps) {
@@ -29,7 +31,12 @@ export default function CustomInput({
                     {leftIcon}
                 </div>
             )}
-            <input {...rest} placeholder={placeholder} className={` ${leftIcon && "pl-12" } w-full h-full border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
+            {!textarea && (
+                <input {...rest} placeholder={placeholder} className={` ${leftIcon && "pl-12"} w-full h-full border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
+            )}
+            {textarea && (
+                <textarea {...rest} placeholder={placeholder} className={` w-full h-full border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
+            )}
         </div>
     )
 }

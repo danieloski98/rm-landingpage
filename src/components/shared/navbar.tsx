@@ -45,8 +45,8 @@ export default function Navbar() {
                 <div className=' pr-24 hidden lg:flex gap-4 ' >
                     {navbarlinks?.map((item, index) => (
                         <div key={index} className={` relative `} >
-                            <Link className={` ${activeLink(item)} border-t-[2px] pt-1 text-sm hover:text-white cursor-pointer ${item?.sublink?.length > 0 ? "" : item?.isDisable ? " " : "relative z-30 "} `} href={item?.link} >{item?.name}</Link>
-                            <div onMouseEnter={() => setShow((item?.sublink?.length > 0 && !item?.isDisable) ? item.name : "")} onMouseLeave={() => setShow("")} className={` w-[150px] h-full absolute z-20 top-0 ${show === item?.name ? " bg-transparent " : ""} rounded-2xl ${item?.isDisable ? " cursor-not-allowed " : ""} `} >
+                            <Link className={` ${activeLink(item)} border-t-[2px] pt-1 text-sm hover:text-white cursor-pointer ${item?.sublink?.length > 0 ? "" : item?.isDisable ? " " : "relative z-10 "} `} href={item?.link} >{item?.name}</Link>
+                            <div onMouseEnter={() => setShow((item?.sublink?.length > 0 && !item?.isDisable) ? item.name : "")} onMouseLeave={() => setShow("")} className={` w-[150px] h-full absolute top-0 ${show === item?.name ? " bg-transparent " : ""} rounded-2xl ${item?.isDisable ? " cursor-not-allowed " : ""} `} >
                                 <div className=' pt-8 ' >
                                     {show === item?.name && (
                                         <div className=' w-full px-4 py-3 flex flex-col bg-secondary10 gap-2 rounded-2xl  ' >
