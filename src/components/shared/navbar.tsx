@@ -35,6 +35,15 @@ export default function Navbar() {
     //     }
     // }
 
+
+    const clickHandler = (item: string) => {
+        if(show){
+            setShow("")
+        } else {
+            setShow(item)
+        }
+    }
+
     return (
         <div className="w-auto h-auto mb-4">
             <div className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
