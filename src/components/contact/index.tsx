@@ -31,10 +31,7 @@ export default function Contact() {
         }
 
         setOpen(value)
-    }
-
-    console.log(openModal);
-
+    } 
 
     return (
         <div className=' w-full py-20 ' >
@@ -148,16 +145,16 @@ export default function Contact() {
                 {open && (
                     <div className=' fixed inset-0 bg-[#0000003D] blur-md z-[1000] ' />
                 )}
+                {open &&
+                    <style>
+                        {`
+                            body{
+                                overflow: hidden !important;
+                            }
+                        `}
+                    </style>
+                }
             </div>
-            {open &&
-                <style>
-                    {`
-                        body{
-                            overflow: hidden !important;
-                        }
-                    `}
-                </style>
-            }
         </div>
     )
 }

@@ -6,8 +6,8 @@ import React from 'react'
 
 export default function Formcomponent() {
     return (
-        <Homelayout first={true} redbgHeight='lg:h-[107px] h-[51px]' > 
-            <div className=' w-full text-primary lg:px-[116px] z-10 relative py-[10px] ' > 
+        <Homelayout first={true} redbgHeight='lg:h-[107px] h-[51px]' >
+            <div className=' w-full text-primary lg:px-[116px] z-10 relative py-[10px] ' >
                 <HeaderCompontent title='Donate Online' body='Partnership' />
                 <div className=' w-full pt-12 items-center gap-6 flex flex-col ' >
                     <form className=' max-w-full lg:max-w-[640px] bg-secondary05 p-5 lg:p-9 w-full flex flex-col gap-6 rounded-2xl border border-secondary04 ' >
@@ -19,9 +19,35 @@ export default function Formcomponent() {
                             <CustomInput placeholder='Your email address' label='Email (required)' width='100%' />
                             <CustomInput placeholder='Your phone number' label='Phone' width='100%' />
                             <CustomInput placeholder='0.00' label='Amount (USD) (required) ' width='100%' />
-                            <CustomInput placeholder='None' label='Recurring Payment' width='100%' />
+                            <CustomInput placeholder='None' label='Recurring Payment' select optionData={[
+                                {
+                                    name: "data",
+                                    value: "data"
+                                },
+                                {
+                                    name: "data",
+                                    value: "data"
+                                },
+                                {
+                                    name: "data",
+                                    value: "data"
+                                }
+                            ]} width='100%' />
                         </div>
-                        <CustomInput placeholder='Regular Partnership' label='Purpose of Giving' width='100%' />
+                        <CustomInput placeholder='Regular Partnership' label='Purpose of Giving' select optionData={[
+                            {
+                                name: "data",
+                                value: "data"
+                            },
+                            {
+                                name: "data",
+                                value: "data"
+                            },
+                            {
+                                name: "data",
+                                value: "data"
+                            }
+                        ]} width='100%' />
                         <div className=' w-full grid grid-cols-1 lg:grid-cols-2 gap-6 ' >
                             <CustomInput placeholder='Enter Date of Birth' label='Date of Birth (required)' width='100%' />
                             <CustomInput placeholder='Enter City' label='City' width='100%' />
