@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Homelayout from '../shared/homelayout'
+import PrayerCard from '../shared/prayerCard'
 
 export default function Herosection() {
 
@@ -40,27 +41,7 @@ export default function Herosection() {
                     <div className=' w-full relative z-10 pl-20 ' >
                         <h2 className=' text-2xl leading-9 ' >MENA Prayer Meetings</h2>
                         <p className=' text-sm leading-[22px] ' >Join the MENA Prayer Meetings</p>
-                        <div className=' w-fit flex mt-8 justify-between gap-12 items-center ' >
-                            <div className=' w-fit flex flex-col gap-6  ' >
-                                <LocationCard />
-                                <LocationCard />
-                            </div>
-                            <div className=' w-[1px] h-[160px] bg-secondary04 ' />
-                            <div className=' w-fit flex flex-col gap-6  ' >
-                                <LocationCard />
-                                <LocationCard />
-                            </div>
-                            <div className=' w-[1px] h-[160px] bg-secondary04 ' />
-                            <div className=' w-fit flex flex-col gap-6  ' >
-                                <LocationCard />
-                                <LocationCard />
-                            </div>
-                            <div className=' w-[1px] h-[160px] bg-secondary04 ' />
-                            <div className=' w-fit flex flex-col gap-6  ' >
-                                <LocationCard />
-                                <LocationCard />
-                            </div>
-                        </div>
+                        <PrayerCard limit={true} />
                         <button className=' text-sm leading-[22px] border border-primary h-[38px] px-4 rounded-[32px] mt-11 ' >
                             View all
                         </button>
