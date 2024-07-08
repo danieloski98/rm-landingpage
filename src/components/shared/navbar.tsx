@@ -19,14 +19,13 @@ const NavLink = ({name, link, sublink, external, isDisable }: INavlinks) => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
 
-
-    const clickHandler = (item: string) => {
-        if(show){
-            setShow("")
-        } else {
-            setShow(item)
-        }
-    }
+    // const clickHandler = (item: string) => {
+    //     if (show) {
+    //         setShow("")
+    //     } else {
+    //         setShow(item)
+    //     }
+    // }
 
     return (
         <div className="w-auto h-auto mb-4">
