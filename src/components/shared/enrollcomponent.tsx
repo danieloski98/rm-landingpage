@@ -7,7 +7,7 @@ export default function Enrollcomponent({
     shownewletter?: boolean
 }) {
     return (
-        <div className=' w-full px-[116px] py-12 flex justify-between ' >
+        <div className=' w-full lg:px-[116px] py-12 flex justify-between ' >
             <div className=' flex flex-col ' >
                 <h3 className=' text-[32px] leading-[48px] font-bold ' >Get Enrolled Today!</h3>
                 <p className=' leading-6 max-w-[550px] mt-4 ' >{`RHEMA is a Bible school that helps you know God’s Word. When you Know God’s Words you will grow in your faith and apply it to your life.`}</p>

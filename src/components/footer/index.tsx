@@ -18,7 +18,7 @@ export default function Footer() {
         <div className=' w-full pt-20 pb-5 flex gap-10 flex-col relative ' >
             <div className=' w-full lg:w-[656px] h-[190px] absolute border border-secondary04 rounded-2xl -right-[50%] lg:right-5 -top-[100px] ' />
             <div className=' w-full flex lg:flex-row flex-col h-auto justify-between items-start pt-4 lg:pr-[116px] lg:gap-0 gap-5 ' >
-                <div className={` flex ${pathname === "/" ? "flex-col" : " flex-row w-full justify-between items-center "}  `} >
+                <div className={` flex ${pathname === "/" ? "flex-col" : " flex-col lg:flex-row w-full lg:justify-between lg:items-center "}  `} >
                     <Image className=' lg:ml-[54px] ' src={"/images/logo.svg"} width={171} height={59} alt='logo' />
                     <div className={` ${pathname === "/" ? " lg:pl-[116px]" : ""} flex flex-col gap-4 mt-5 `} >
                         <div className=' flex items-center gap-3 ' >
