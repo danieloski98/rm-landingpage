@@ -35,7 +35,7 @@ export default function Footer() {
                 <div className=' lg:hidden w-full block ' >
                     <ContactInfo />
                 </div>
-                {pathname === "/" && (
+                {(
                     <div className=' flex max-w-[726px] flex-wrap justify-between w-full pt-2 lg:gap-0 gap-6 text-secondary02 ' >
                         {footerlinks?.map((item, index) => (
                             <div key={index} className=' flex flex-col gap-1 ' >
