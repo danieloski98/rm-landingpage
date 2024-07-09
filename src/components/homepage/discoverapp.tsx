@@ -24,7 +24,7 @@ export default function Discoverapp() {
             </div>
             <div className=' w-full  py-20 flex flex-col gap-4  relative' >
                 <h2 className=' text-[32px] lg:text-[48px] leading-[48px] lg:leading-[64px] font-bold ' >Discover your Purpose with RHEMA</h2>
-                <p >"The sun never sets on a Rhema graduate preaching the Word of God." <br /> - Kenneth W. Hagin</p>
+                <p >The sun never sets on a Rhema graduate preaching the Word of God &quot; <br /> - Kenneth W. Hagin</p>
                 <div className=' flex relative z-10 gap-4 mt-4 w-full lg:w-auto lg:flex-row flex-col ' >
                     <button className=' text-sm leading-[22px] border border-primary h-[48px] lg:w-fit w-full lg:px-4 rounded-[8px] ' >
                         Learn more about RHEMA

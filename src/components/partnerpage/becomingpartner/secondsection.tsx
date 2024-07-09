@@ -10,7 +10,7 @@ export default function Secondsection() {
                 <div className=' w-[569px] h-[266px] bg-opacity-10 bg-primary03 rounded-2xl absolute -bottom-10 -right-[340px] lg:right-5 ' />
                 <div className=' w-full flex relative lg:flex-row flex-col lg:gap-0 gap-12 ' >
                     {partnerlinks?.map((item, index) => (
-                        <div className=' w-full flex flex-col gap-3 ' >
+                        <div key={index.toString()} className=' w-full flex flex-col gap-3 ' >
                             <div className=' w-20 h-20 rounded-full lg:block hidden bg-blue-800 ' >
 
                             </div>
