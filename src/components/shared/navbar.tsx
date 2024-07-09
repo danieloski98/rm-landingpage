@@ -28,7 +28,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className=' w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end ' >
+        <div className=' w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end sm:bg-[#212B36] lg:bg-transparent ' >
             <div className=' w-fit absolute top-0 right-16 ' >
                 <Image src={"/images/home/navstroke.svg"} width={656} height={122} alt='nav' />
             </div>

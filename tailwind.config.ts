@@ -27,7 +27,14 @@ const config: Config = {
         light02: "#212B36",
         dark01: "#3B3B3B",
         dark02: "#919EAB"
-      }
+      },
+      screens: {
+        sm: "240px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
     },
   },
   plugins: [],

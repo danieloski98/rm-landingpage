@@ -11,7 +11,7 @@ import ContentArea from "@/components/blog/ContentArea";
 export default function BlogPage() {
     const [active, setActive] = React.useState<string>("Articles");
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-auto">
             {/* HEADER SECTION */}
             <BlogHeader />
             {/* TAB SECTION */}
