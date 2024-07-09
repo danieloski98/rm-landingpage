@@ -111,7 +111,7 @@ export default function Navbar() {
                                             ? item.name
                                             : "",
                                     )}
-                                onMouseLeave={() => setShow("")}
+                                // onMouseLeave={() => setShow("")}
                                 className={` w-[155px] h-full absolute top-0 ${show === item?.name ? " bg-transparent " : ""
                                     } rounded-2xl ${item?.isDisable ? " cursor-not-allowed " : ""
                                     } `}
