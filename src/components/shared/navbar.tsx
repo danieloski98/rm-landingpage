@@ -19,6 +19,10 @@ const NavLink = ({ name, link, sublink, external, isDisable }: INavlinks) => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
 
+    useEffect(()=> {
+        setIsOpen(false)
+    }, [pathname])
+
 
     return (
         <div className="w-auto h-auto mb-4">
@@ -73,10 +77,6 @@ export default function Navbar() {
         }
     };
 
-    useEffect(()=> {
-        setShowDrawer(false)
-    }, [pathname])
-
     return (
         <div className={` w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end ${pathname === "/training/blog" ? "sm:bg-[#212B36]" : ""} lg:bg-transparent `}>
             <div className=" w-fit absolute top-0 right-16 ">
@@ -98,7 +98,7 @@ export default function Navbar() {
                                         ? ""
                                         : item?.isDisable
                                             ? " "
-                                            : "relative z-10 "
+                                            : "relative z-20 "
                                     } `}
                                 href={item?.link}
                             >
@@ -118,7 +118,7 @@ export default function Navbar() {
                             >
                                 <div className=" pt-8 ">
                                     {show === item?.name && (
-                                        <div className=" w-full px-4 py-3 flex flex-col bg-secondary10 gap-2 rounded-2xl z-40 ">
+                                        <div className=" w-full px-4 py-3 flex flex-col bg-secondary10  relative z-30 gap-2 rounded-2xl ">
                                             {item?.sublink?.map((subitem, subindex) => (
                                                 <Link
                                                     className={` ${subitem?.link === pathname
@@ -126,7 +126,8 @@ export default function Navbar() {
                                                             : "border-transparent text-primary hover:text-white "
                                                         } relative pt-1 text-sm cursor-pointer `}
                                                     key={subindex}
-                                                    href={subitem?.link} 
+                                                    href={subitem?.link}
+                                                    onClick={() => setShowDrawer(false)}
                                                 >
                                                     {subitem?.name}
                                                 </Link>
