@@ -85,7 +85,7 @@ export default function Contact() {
                         <div className='  ' >
                             <h4 className='px-5 font-bold leading-[36px] text-2xl ' >Send us a message</h4>
                             <p className='px-5 text-sm leading-[22px] pb-3 ' >Do not hesitate to contact us, we are always happy to talk to you.</p>
-                            <form className=' w-full flex flex-col overflow-y-auto max-h-[748px] gap-6 pt-2 px-5 mb-[80px] pb-5 flex-1 ' >
+                            <form className=' w-full flex flex-col overflow-y-auto max-h-[450px] gap-6 pt-2 px-5 mb-[80px] pb-5 flex-1 ' >
                                 <div className=' w-full mt-4 ' >
                                     <CustomInput placeholder='Choose Title' select optionData={[
                                         {

@@ -41,13 +41,13 @@ export default function CustomInput({
                 </div>
             )}
             {(!textarea && !select) && (
-                <input {...rest} placeholder={placeholder} className={` ${leftIcon && "pl-12"} w-full h-full border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
+                <input {...rest} placeholder={placeholder} className={` ${leftIcon && "pl-12"} w-full h-[48px] border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
             )}
             {textarea && (
                 <textarea {...rest} placeholder={placeholder} className={` w-full h-[100px] border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} />
             )}
             {select && (
-                <select {...rest} className={` ${leftIcon && "pl-12"} w-full h-full border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} >
+                <select {...rest} className={` ${leftIcon && "pl-12"} w-full h-[48px] border border-[#919EAB52] rounded-lg px-4 bg-transparent text-sm leading-[22px] outline-none ${className} `} >
                     <option value={""} >{placeholder}</option>
                     {optionData && (
                         <>
