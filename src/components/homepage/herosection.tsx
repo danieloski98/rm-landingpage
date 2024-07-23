@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Homelayout from "../shared/homelayout";
 import PrayerCard from "../shared/prayerCard";
+import Carousel from "./carousel";
 
 export default function Herosection() {
   const LocationCard = () => {
@@ -31,7 +32,7 @@ export default function Herosection() {
         </p>
         <div className=" w-full relative pt-12 flex lg:pr-12 ">
           <div className=" w-full lg:w-[537px] h-[158px] lg:h-[182px] bg-secondary04 rounded-2xl absolute -right-[50%] lg:right-0 top-0 " />
-          <div className=" w-full  lg:max-h-[646px] relative lg:h-[646px] h-[195px] ">
+          {/* <div className=" w-full  lg:max-h-[646px] relative lg:h-[646px] h-[195px] ">
             <Image
               src={"/images/home/Slider.png"}
               alt="Slider"
@@ -42,7 +43,8 @@ export default function Herosection() {
               layout="fill"
               style={{ width: "100%" }}
             />
-          </div>
+          </div> */}
+          <Carousel />
         </div>
         <div className=" w-full relative mt-6 pt-[40px] lg:pt-[120px] ">
           <div className=" w-[537px] h-[100px] lg:h-[182px] rounded-2xl bg-secondary10 absolute top-0 " />
