@@ -106,7 +106,7 @@ export default function Navbar() {
           alt="nav"
         />
       </div>
-      <div className="w-[205px] h-[222px] bg-[#828282] right-[250px] top-[100px] rounded-[16px] absolute" />
+      <div className="w-[205px] h-[222px] bg-secondary04 right-[250px] top-[100px] rounded-[16px] absolute" />
       <div className=" w-full lg:py-0 py-3 flex justify-between lg:items-start items-center ">
         <Image src={"/images/logo.svg"} width={171} height={59} alt="logo" />
         <div className=" pr-24 hidden lg:flex gap-4 h-[56px] ">
@@ -144,7 +144,7 @@ export default function Navbar() {
               >
                 <div className=" pt-8 ">
                   {show === item?.name && (
-                    <div className=" w-full px-4 py-3 mt-3 flex flex-col bg-secondary10  relative z-30 gap-2 rounded-2xl ">
+                    <div className=" w-full px-4 py-3 mt-3 flex flex-col bg-secondary10 relative z-30 gap-2 rounded-2xl ">
                       {item?.sublink?.map((subitem, subindex) => (
                         <Link
                           className={` ${

@@ -4,18 +4,7 @@ import Homelayout from "../shared/homelayout";
 import PrayerCard from "../shared/prayerCard";
 import Carousel from "./carousel";
 
-export default function Herosection() {
-  const LocationCard = () => {
-    return (
-      <div className=" flex gap-4 ">
-        <div className=" w-[82px] h-[82px] rounded-xl bg-green-600 "></div>
-        <div className=" mt-auto ">
-          <p className=" text-xs leading-[18px] ">Pray for</p>
-          <p className="  leading-7 font-semibold ">Algeria</p>
-        </div>
-      </div>
-    );
-  };
+export default function Herosection() { 
 
   return (
     <Homelayout first={true}>

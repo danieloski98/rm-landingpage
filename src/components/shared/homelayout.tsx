@@ -25,7 +25,7 @@ export default function Homelayout({
       )}
       {first && (
         <div
-          className={` sm:max-w-[534px] w-full lg:max-w-[811px] lg:w-[811px] ${redbgHeight ?? "h-[182px]"} rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-0 left-0 lg:left-[50px] `}
+          className={` sm:w-[292px] lg:w-[534px] ${redbgHeight ?? "h-[182px]"} rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-0 left-0 lg:left-[50px] `}
         />
       )}
       {children}

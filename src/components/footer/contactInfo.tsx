@@ -16,7 +16,7 @@ export default function ContactInfo() {
                         <h6 className=' font-bold text-lg leading-[28px] ' >Contact us</h6>
                         <p className=' text-sm leading-[22px] mt-2 ' >RHEMA Lebanon Biblical training Center</p>
                         <p className=' text-sm leading-[22px] ' >+961 81 206 946</p>
-                        <p className=' text-sm leading-[22px] ' ><span className='text-secondary02 ' >Email: </span>matt@RhemaConnect.com</p>
+                        <p className=' text-sm leading-[22px] ' ><span className='text-secondary02 ' >Email: </span>admin@rhemamena.com</p>
                     </div>
                     <Newsletter />
                     <div className=' lg:block hidden   ' > 
