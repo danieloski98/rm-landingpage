@@ -5,6 +5,7 @@ import { SearchNormal} from 'iconsax-react'
 import BlogTab from "@/components/blog/BlogTab";
 import BlogHeader from "@/components/blog/Header";
 import ContentArea from "@/components/blog/ContentArea";
+import VideosArea from "@/components/blog/Videos";
 
 // REMEBER TO USE NEXTJS ssr FOR DATA FETCHING
 
@@ -18,7 +19,10 @@ export default function BlogPage() {
             <BlogTab value={active} onClick={(data) => setActive(data)} />
 
             {/* MAIN CONTENT AREA */}
-            <ContentArea />
+            { active === "Articles" && <ContentArea /> }
+            { active === "Videos" && <VideosArea /> }
+            { active === "News" && <VideosArea /> }
+            { active === "Conferences & Events" && <VideosArea /> }
 
         </div>
     )
