@@ -11,7 +11,7 @@ interface IProps {
 
 export default function BlogTab({ onClick, value }: IProps) {
   return (
-    <>
+    <div className="flex-col">
       <div className=" sm:w-full lg:w-[40%] sm:h-[40px] lg:h-[50px] flex lg:pl-16 pt-4 sm:bg-[#212B36] lg:bg-transparent px-3 z-[1000]">
         {tabItems.map((item, index) => (
           <div
@@ -32,7 +32,7 @@ export default function BlogTab({ onClick, value }: IProps) {
         ))}
       </div>
 
-      <div className="w-full pt-3 pb-4 sm:flex lg:hidden sm:bg-[#212B36] px-3">
+      <div className="w-full lg:w-[427px] lg:ml-12 mt-4 pt-3 pb-4 flex sm:bg-[#212B36] lg:bg-transparent px-3 z-50">
         <CustomInput
           leftIcon={
             <SearchNormal size={"20px"} color="grey" variant="Outline" />
@@ -43,6 +43,6 @@ export default function BlogTab({ onClick, value }: IProps) {
           className="w-[100%] h-[56px]"
         />
       </div>
-    </>
+    </div>
   );
 }

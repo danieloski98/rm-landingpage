@@ -14,7 +14,7 @@ export default function BlogHeader() {
           </p>
         </div>
 
-        <div className=" flex-[0.4] flex items-end">
+        {/* <div className=" flex-[0.4] flex items-end">
           <CustomInput
             leftIcon={
               <SearchNormal size={"20px"} color="grey" variant="Outline" />
@@ -23,7 +23,7 @@ export default function BlogHeader() {
             placeholder="Search"
             className="w-[437px] h-[56px]"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full h-auto sm:flex flex-col lg:hidden bg-[#212B36] px-3">
