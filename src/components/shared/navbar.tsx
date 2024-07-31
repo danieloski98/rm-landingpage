@@ -114,7 +114,7 @@ export default function Navbar() {
         />
       </div>
       <div className="w-[205px] h-[222px] bg-secondary04 right-[250px] top-[100px] rounded-[16px] absolute" />
-      <div className=" w-full lg:py-0 py-3 flex justify-between lg:items-start items-center ">
+      <div className=" w-full lg:py-0 py-3 pl-1 flex justify-between lg:items-start items-center ">
         <Image src={"/images/logo.svg"} width={171} height={59} alt="logo" />
         <div className=" pr-24 hidden lg:flex gap-4 h-[56px] ">
           {navbarlinks?.map((item, index) => (

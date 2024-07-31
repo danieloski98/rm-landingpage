@@ -12,8 +12,12 @@ export default function Firstsection() {
             A LETTER TO OUR PARTNERS FROM KENNETH W. HAGIN
           </h3>
           <div className=" w-full flex lg:flex-row flex-col mt-10 gap-8 ">
-            <div className=" w-full lg:w-[404px] h-[229.23px] lg:h-[270px] rounded-2xl bg-green-500 overflow-hidden">
-              <img src="/images/kenneth.svg" className="w-full h-full" />
+            <div className=" w-full lg:w-[404px] h-[229.23px] lg:h-[270px] rounded-2xl ">
+              <img
+                alt="blog"
+                src="/images/partner.png"
+                className=" w-full h-full object-cover rounded-2xl "
+              />
             </div>
             <div className=" flex flex-col flex-1 ">
               <h5 className=" text-[20px] leading-[30px] text-primary font-bold ">
