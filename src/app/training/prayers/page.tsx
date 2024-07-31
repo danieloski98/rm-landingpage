@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Prayers() {
   return (
-    <div className=" w-full px-0 lg:px-[94px]">
+    <div className=" w-full px-0 lg:px-[50px]">
       <Homelayout first={true} redbgHeight="h-[107px]">
         <div className=" w-full text-primary px-4 lg:px-[116px] z-10 relative py-[10px] ">
           <h1 className=" text-[64px] leading-[80px] font-bold ">
