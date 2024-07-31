@@ -16,26 +16,14 @@ export default function Herosection() {
           {`We exist as an extension to fulfill the mandate given to Kenneth E. Hagin, ‘go, teach my people faith’ and help usher in the last great move of God’s Spirit and the return of Jesus. .`}
           <br />
           <br />
-          {`We see leaders trained to go forth with a pioneering spirit, a new breed of believers who demonstrate extravagant love, a ‘spirit of faith,’ and the power of God while pursuing the lost in the least-reached regions of Lebanon, MENA, and beyond.`}
+          {`RHEMA MENA is a regional extension of Kenneth Hagin’s Rhema Bible Training College - with same goal of strengthening God’s Church to fulfill its purpose in the MENA region.`}
         </p>
         <div className=" w-full relative pt-12 flex lg:pr-12 ">
           <div className=" w-full lg:w-[537px] h-[158px] lg:h-[182px] bg-secondary04 rounded-2xl absolute -right-[50%] lg:right-0 top-0 " />
-          {/* <div className=" w-full  lg:max-h-[646px] relative lg:h-[646px] h-[195px] ">
-            <Image
-              src={"/images/home/Slider.png"}
-              alt="Slider"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className=" rounded-2xl relative z-10 "
-              layout="fill"
-              style={{ width: "100%" }}
-            />
-          </div> */}
           <Carousel />
         </div>
         <div className=" w-full relative mt-6 pt-[40px] lg:pt-[120px] ">
-          <div className=" w-[537px] h-[100px] lg:h-[182px] rounded-2xl bg-secondary10 absolute top-0 " />
+          <div className=" w-[537px] h-[120px] lg:h-[182px] rounded-bl-2xl lg:rounded-2xl bg-secondary10 absolute top-0 " />
           <div className=" w-full relative z-10 lg:pl-20 ">
             <h2 className=" text-2xl leading-9 ">MENA Prayer Meetings</h2>
             <p className=" text-sm leading-[22px] ">

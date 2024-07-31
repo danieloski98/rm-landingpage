@@ -1,6 +1,5 @@
 import React from "react";
 import BlogData from "../shared/blogData";
-import Link from "next/link";
 
 export default function Blogpost() {
   const BlogCard = () => {
