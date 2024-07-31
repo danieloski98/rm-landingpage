@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function DonateOnline() {
     return (
-        <div className=' w-full lg:px-[94px]' >
+        <div className=' w-full lg:px-[50px]' >
             <div className=" w-full " >
                 <Formcomponent />
             </div>

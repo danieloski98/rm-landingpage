@@ -50,20 +50,20 @@ function Carousel(props: Props) {
     }, [isShown])
 
     return (
-        <div className=' w-full relative h-[500px] rounded-2xl ' >
-            <div className=' absolute inset-0 h-[500px] rounded-2xl  ' >
+        <div className=' w-full relative h-[300px] lg:h-[500px] rounded-2xl ' >
+            <div className=' absolute inset-0 h-[300px] lg:h-[500px] rounded-2xl  ' >
                 {data?.map((item: string, index: number) => {
                     return (
                         <AnimatePresence key={index} >
                             {index === isShown &&
-                                <motion.div {...boxAnimation} style={{ width: "100%", height: "500px", borderRadius: "16px", position: "absolute", inset: "0px", objectFit: "cover" }} > 
+                                <motion.div {...boxAnimation} className=' h-[300px] lg:h-[500px] ' style={{ width: "100%", borderRadius: "16px", position: "absolute", inset: "0px", objectFit: "cover" }} > 
                                     <Image
                                         src={item}
                                         alt="Slider"
                                         width={0}
                                         height={0}
                                         sizes="100vw"
-                                        className=" rounded-2xl relative z-10 "
+                                        className=" rounded-2xl object-cover relative z-10 "
                                         layout="fill"
                                         style={{ width: "100%" }}
                                     />

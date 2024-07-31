@@ -5,13 +5,13 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className=" w-full lg:px-[94px] ">
+    <div className=" w-full lg:px-[50px] ">
       <Homelayout first={true} redbgHeight=" lg:h-[182px] h-[51px]  ">
-        <div className="w-[359px] h-[193px] bg-[#828282] absolute top-48 rounded-[16px] hidden lg:flex flex-col justify-end p-[20px] right-80">
+        <div className="w-[359px] h-[193px] bg-[#828282] absolute top-48 rounded-[16px] hidden lg:flex flex-col justify-end p-[20px] right-0">
           <p className="text-md font-normal">
             The sun never sets on a RHEMA graduate preaching the word or God.
           </p>
-          <p className="mt-6 text-red-600 text-md font-bold">
+          <p className="mt-6 text-[#4C0010] text-md font-bold">
             KENNETH W. HAGIN
           </p>
         </div>

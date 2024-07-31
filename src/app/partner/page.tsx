@@ -6,7 +6,7 @@ import React from 'react'
 export default function Partner() {
     return (
         <div className=' w-full ' >
-            <div className=" w-full lg:px-[94px] " >
+            <div className=" w-full lg:px-[50px] " >
                 <Firstsection />
             </div>
             <Secondsection />
