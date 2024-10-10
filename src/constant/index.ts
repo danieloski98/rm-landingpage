@@ -140,18 +140,18 @@ export const footerlinks = [
 
 export const partnerlinks = [
   {
-    name: "Individual Partnership",
-    linkText: "Click here to sign up",
+    name: "Sponsor a Student ",
+    linkText: "$78 per month (based on RBTC Beirut)",
     link: "",
   },
   {
-    name: "Corporate Partnership",
-    linkText: "Click here to sign up",
+    name: "Partner Monthly",
+    linkText: " Help see RHEMA expand throughout MENA",
     link: "",
   },
   {
-    name: "Donate to RHEMA MENA",
-    linkText: "Click here to Donate Now",
+    name: "One Time Gift",
+    linkText: "Give a one-time gift to RHEMA MENA",
     link: "",
   },
 ];
@@ -161,8 +161,8 @@ export const contactinfo = [
     name: "RHEMA LEBANON",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "+961 81 206 946",
+      name: "RHEMA Bible Training College",
+      contact_location: "Antelias, Mount Lebanon",
       email: "info@rhemalebanon.com",
     },
   },
@@ -170,20 +170,20 @@ export const contactinfo = [
     name: "RHEMA EGYPT",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
+      name: "RHEMA Bible Training College",
+      contact_location: "Antelias, Mount Lebanon - Lebanon",
       email: "info@rhemaegypt.com",
     },
   },
-  {
-    name: "RHEMA TURKEY",
-    details: "Reach us from anywhere in the Middle East & North Africa Region",
-    address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
-      email: "lebanon@rhematurkey.com",
-    },
-  },
+  // {
+  //   name: "RHEMA TURKEY",
+  //   details: "Reach us from anywhere in the Middle East & North Africa Region",
+  //   address: {
+  //     name: "RHEMA Bible Training College",
+  //     contact_location: "Antelias, Mount Lebanon - Lebanon",
+  //     email: "lebanon@rhematurkey.com",
+  //   },
+  // },
 ];
 
 export const tuitionfee = [

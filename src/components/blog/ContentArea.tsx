@@ -3,13 +3,11 @@ import { ArrowLeft, ArrowRight } from "iconsax-react";
 import PostCard from "./PostCard";
 import { BLOG_DATA } from "@/common/BlogData";
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4];
-
 export default function ContentArea() {
   const [page, setPage] = React.useState(1);
 
   const handleForward = React.useCallback(() => {
-    if (page !== items.slice(0, 6).length) {
+    if (page !== BLOG_DATA.slice(0, 6).length) {
       setPage(page + 1);
     }
   }, [page]);
@@ -44,7 +42,7 @@ export default function ContentArea() {
 
           <div className="w-[60%]  h-[50px] items-center justify-center px-6 flex">
             <div className="sm:hidden lg:flex">
-              {items.slice(0, 6).map((item, index) => (
+              {BLOG_DATA.slice(0, 6).map((item, index) => (
                 <div
                   key={index.toString()}
                   onClick={() => setPage(index)}
@@ -64,7 +62,7 @@ export default function ContentArea() {
             </div>
             <div className="sm:flex lg:hidden">
               <p className="font-normal text-[#F4F4F4] text-[14px">
-                page {page} of {items.slice(0, 6).length}
+                page {page} of {BLOG_DATA.slice(0, 6).length}
               </p>
             </div>
           </div>
