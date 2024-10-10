@@ -1,6 +1,8 @@
 import { partnerlinks } from "@/constant";
 import Link from "next/link";
 import React from "react";
+import { IoPeople } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
 
 export default function Secondsection() {
   return (
@@ -14,7 +16,16 @@ export default function Secondsection() {
               key={index.toString()}
               className=" w-full flex flex-col gap-3 "
             >
-              <div className=" w-20 h-20 rounded-full lg:block hidden bg-blue-800 "></div>
+              <div className=" w-20 h-20 rounded-full lg:block hidden bg-[#828282] p-2">
+                <div className="w-full h-full rounded-full bg-[#939393] flex justify-center items-center">
+                  {!item?.name.includes("One") && (
+                    <IoPeople size={25} color="white" />
+                  )}
+                  {item?.name.includes("One") && (
+                    <FaHeart size={25} color="white" />
+                  )}
+                </div>
+              </div>
               <div className=" ">
                 <h4 className=" text-2xl leading-[36px] font-bold text-primary ">
                   {item?.name}

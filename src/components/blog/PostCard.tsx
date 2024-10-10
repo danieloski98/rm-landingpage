@@ -32,7 +32,7 @@ export default function PostCard({
         <h3 className="font-semibold text-[18px] text-white sm:w-full lg:w-[60%]">
           {item?.title}
         </h3>
-        <p className=" font-normal text-[16px] text-[#828282] mt-2 sm:w-full lg:w-[60%]">
+        <p className=" font-normal text-[16px] text-[#F4F4F4] mt-2 sm:w-full lg:w-[60%]">
           {item?.description.substring(0, 300) + "..."}
         </p>
 
