@@ -6,8 +6,8 @@ export default function Blogpost() {
     const BlogCard = () => {
         return (
             <div className=' w-full flex flex-col gap-6 ' >
-                <div className=' w-full h-[240px] bg-violet-600 rounded-2xl ' >
-
+                <div className=' w-full h-[240px] rounded-2xl ' >
+                    <img alt='blog' src='/images/blogimg.png' className=' w-full h-full object-cover rounded-2xl ' />
                 </div>
                 <div className=' w-full flex flex-col gap-2 ' >
                     <p className=' text-sm leading-[22px] text-primary01 font-medium ' >Articles</p>

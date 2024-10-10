@@ -1,14 +1,11 @@
 "use client";
 import { navbarlinks } from "@/constant";
 import { MenuIcon } from "@/svg";
-import { ArrowDown2, ArrowUp2, CloseCircle, Minus } from "iconsax-react";
+import { ArrowDown2, ArrowUp2, CloseCircle } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-// import { Drawer } from "vaul";
-import { DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerFooter, DrawerClose, Drawer } from "../ui/drawer";
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuRadioGroup, DropdownMenuRadioItem } from "@radix-ui/react-dropdown-menu";
 
 interface INavlinks {
   name: string;
@@ -28,7 +25,7 @@ const NavLink = ({ name, link, sublink, external, isDisable }: INavlinks) => {
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsOpen(false); 
+    setIsOpen(false);
   }, [pathname]);
 
   return (
@@ -97,10 +94,6 @@ export default function Navbar() {
     }
   };
 
-  useEffect(() => {
-    setShowDrawer(false); 
-  }, [pathname]);
-
   return (
     <div
       className={` w-full h-[122px] lg:h-[167px] relative px-6 lg:px-8 pb-4 flex lg:items-end ${pathname === "/training/blog" ? "sm:bg-[#212B36]" : ""} lg:bg-transparent `}
@@ -114,7 +107,7 @@ export default function Navbar() {
         />
       </div>
       <div className="w-[205px] h-[222px] bg-secondary04 right-[250px] top-[100px] rounded-[16px] absolute" />
-      <div className=" w-full lg:py-0 py-3 pl-1 flex justify-between lg:items-start items-center ">
+      <div className=" w-full lg:py-0 py-3 flex justify-between lg:items-start items-center ">
         <Image src={"/images/logo.svg"} width={171} height={59} alt="logo" />
         <div className=" pr-24 hidden lg:flex gap-4 h-[56px] ">
           {navbarlinks?.map((item, index) => (
@@ -123,12 +116,13 @@ export default function Navbar() {
               className={` ${activeLink(item)} pt-4 relative w-full h-full border-t-[4px] `}
             >
               <Link
-                className={`text-sm hover:text-white cursor-pointer whitespace-nowrap  ${item?.sublink?.length > 0
-                  ? ""
-                  : item?.isDisable
-                    ? " "
-                    : "relative z-20 "
-                  } `}
+                className={`text-sm hover:text-white cursor-pointer whitespace-nowrap  ${
+                  item?.sublink?.length > 0
+                    ? ""
+                    : item?.isDisable
+                      ? " "
+                      : "relative z-20 "
+                } `}
                 href={item?.link}
               >
                 {item?.name}
@@ -142,19 +136,22 @@ export default function Navbar() {
                   )
                 }
                 onMouseLeave={() => setShow("")}
-                className={` w-[155px] h-full absolute top-0 ${show === item?.name ? " bg-transparent " : ""
-                  } rounded-2xl ${item?.isDisable ? " cursor-not-allowed " : ""
-                  } `}
+                className={` w-[155px] h-full absolute top-0 ${
+                  show === item?.name ? " bg-transparent " : ""
+                } rounded-2xl ${
+                  item?.isDisable ? " cursor-not-allowed " : ""
+                } `}
               >
                 <div className=" pt-8 ">
                   {show === item?.name && (
                     <div className=" w-full px-4 py-3 mt-3 flex flex-col bg-secondary10 relative z-30 gap-2 rounded-2xl ">
                       {item?.sublink?.map((subitem, subindex) => (
                         <Link
-                          className={` ${subitem?.link === pathname
-                            ? " text-primary03 "
-                            : "border-transparent text-primary hover:text-white "
-                            } relative pt-1 text-sm cursor-pointer `}
+                          className={` ${
+                            subitem?.link === pathname
+                              ? " text-primary03 "
+                              : "border-transparent text-primary hover:text-white "
+                          } relative pt-1 text-sm cursor-pointer `}
                           key={subindex}
                           href={subitem?.link}
                           onClick={() => setShowDrawer(false)}
@@ -168,21 +165,16 @@ export default function Navbar() {
               </div>
             </div>
           ))}
-        </div> 
-        <DropdownMenu open={showDrawer} onOpenChange={()=> setShowDrawer(false)} >
-          <DropdownMenuTrigger  asChild>
-            <button onClick={()=> setShowDrawer((prev) => !prev)} className=" lg:hidden flex " >{!showDrawer ? <MenuIcon /> : <CloseCircle/> } </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className=" bg-gray-700 w-fit mr-3 rounded-2xl relative z-[5000] p-6 pb-4 mt-4 ">
-
-            {navbarlinks.map((item, index) => (
-              <NavLink key={index.toString()} {...item} />
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
+        </div>
+        <div
+          className=" lg:hidden flex "
+          onClick={() => setShowDrawer((prev) => !prev)}
+        >
+          <MenuIcon />
+        </div>
       </div>
 
-      {/* {showDrawer && (
+      {showDrawer && (
         <div className="w-[80%] h-screen absolute right-0 bg-gray-700 z-[5000] px-5 ">
           <div className="w-full h-24 flex justify-end items-center">
             <CloseCircle onClick={() => setShowDrawer(false)} />
@@ -191,7 +183,7 @@ export default function Navbar() {
             <NavLink key={index.toString()} {...item} />
           ))}
         </div>
-      )} */}
+      )}
     </div>
   );
 }
