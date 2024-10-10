@@ -20,16 +20,20 @@ export default function About() {
           <p className=" max-w-[606px] mt-4 leading-6 ml-6">
             <span>
               {`RHEMA Lebanon is a center of excellence for Spirit-led,
+              {`RHEMA Lebanon is a center of excellence for Spirit-led,
               Bible-based, practical leadership training that empowers and
+              strengthens Gods Church to fulfill its purpose in Lebanon and
               strengthens Gods Church to fulfill its purpose in Lebanon and
               beyond. RBTC begins by training believers to lead themselves as
               they discover and qualify for their God-given purpose. Then,
               building on this foundation, the training provides value for three
               types of leaders: Spiritual Leaders (Apostle, Prophet, Evangelist,
               Pastor & Teacher).`}
+              Pastor & Teacher).`}
             </span>
             <br /> <br />
             <span>
+              {`These lead the church. They are the vision carriers. Supportive
               {`These lead the church. They are the vision carriers. Supportive
               Leadership (Assistant Pastors, Children & Youth Directors, Worship
               leaders, Department Heads, Administrators, Media, etc.) - these
@@ -48,8 +52,7 @@ export default function About() {
               Executives, Health Care Providers, Educators, Media influencers,
               Public Servants, and even moms and dads who influence their
               families and communities for Christ. These also work to use their
-              resources, talents, and influence to support God's Church.
-              `}
+              resources, talents, and influence to support God's Church.`}
             </span>
             <br />
           </p>
