@@ -4,8 +4,7 @@ import Homelayout from "../shared/homelayout";
 import PrayerCard from "../shared/prayerCard";
 import Carousel from "./carousel";
 
-export default function Herosection() { 
-
+export default function Herosection() {
   return (
     <Homelayout first={true}>
       <div className=" w-[537px] h-[162px] rounded-t-2xl border border-b-0 border-secondary04 absolute bottom-0 right-0 " />
@@ -14,10 +13,12 @@ export default function Herosection() {
           RHEMA MENA IS FOR YOU!
         </h1>
         <p className=" w-full lg:max-w-[551px] mt-4 leading-6 relative z-10 ">
-          {`RHEMA MENA is a regional extension of Kenneth Hagin’s Rhema Bible Training College - with same goal of strengthening God’s Church to fulfill its purpose in the MENA region.`}
+          {`
+            We exist as an extension to fulfill the mandate given to Kenneth E. Hagin, ‘go, teach my people faith’ and help usher in the last great move of God’s Spirit and the return of Jesus. 
+          `}
           <br />
           <br />
-          {`RHEMA MENA is a regional extension of Kenneth Hagin’s Rhema Bible Training College - with same goal of strengthening God’s Church to fulfill its purpose in the MENA region.`}
+          {`We see leaders trained to go forth with a pioneering spirit, a new breed of believers who demonstrate extravagant love, a ‘spirit of faith,’ and the power of God while pursuing the lost in the least-reached regions of Lebanon, MENA, and beyond.`}
         </p>
         <div className=" w-full relative pt-12 flex lg:pr-12 ">
           <div className=" w-full lg:w-[537px] h-[158px] lg:h-[182px] bg-secondary04 rounded-2xl absolute -right-[50%] lg:right-0 top-0 " />

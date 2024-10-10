@@ -17,11 +17,33 @@ export default function About() {
         </div>
         <div className=" w-full text-primary lg:px-[116px] z-10 relative lg:py-[115px] py-[10px] ">
           <HeaderCompontent title="Bible Training Campuses" body="" />
-          <p className=" max-w-[606px] mt-4 leading-6 ">
-            {`Reach us from anywhere in the Middle East & North Africa Region RHEMA MENA is a regional extension of Kenneth Hagin’s Rhema Bible Training College - with same goal of strengthening God’s Church to fulfill its purpose in the MENA region.`}
+          <p className=" max-w-[606px] mt-4 leading-6 ml-6">
+            <span>
+              RHEMA Lebanon is a center of excellence for Spirit-led,
+              Bible-based, practical leadership training that empowers and
+              strengthens God’s Church to fulfill its purpose in Lebanon and
+              beyond. RBTC begins by training believers to lead themselves as
+              they discover and qualify for their God-given purpose. Then,
+              building on this foundation, the training provides value for three
+              types of leaders: Spiritual Leaders (Apostle, Prophet, Evangelist,
+              Pastor & Teacher).
+            </span>
+            <br /> <br />
+            <span>
+              These lead the church. They are the vision carriers. Supportive
+              Leadership (Assistant Pastors, Children & Youth Directors, Worship
+              leaders, Department Heads, Administrators, Media, etc.) - these
+              are called to assist Spiritual Leaders in fulfilling the vision
+              God has asked them to steward. Strong Spiritual and Supportive
+              leaders build strong churches, producing Societal Leaders who
+              become catalysts for Godly change in their families, communities,
+              cities, and nations. Societal Leaders include Business Owners and
+              Executives, Health Care Providers, Educators, Media influencers,
+              Public Servants, and even moms and dads who influence their
+              families and communities for Christ. These also work to use their
+              resources, talents, and influence to support God's Church.
+            </span>
             <br />
-            <br />
-            {`Reach us from anywhere in the Middle East & North Africa Region RHEMA MENA is a regional extension of Kenneth Hagin’s Rhema Bible Training College - with same goal of strengthening God’s Church to fulfill its purpose in the MENA region.`}
           </p>
           <div className=" w-full flex flex-col gap-4 py-10 ">
             <div className=" flex lg:items-center lg:flex-row flex-col gap-4 ">

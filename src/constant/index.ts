@@ -82,7 +82,7 @@ export const navbarlinks = [
 
 export const footerlinks = [
   {
-    title: "Rhema Campuses",
+    title: "RHEMA Campuses",
     linksdata: [
       {
         name: "MENA Campuses",
@@ -116,6 +116,10 @@ export const footerlinks = [
       {
         name: "Values",
         link: "",
+      },
+      {
+        name: "FAQs",
+        link: "/faq",
       },
     ],
   },
