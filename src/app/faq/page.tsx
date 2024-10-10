@@ -11,13 +11,13 @@ const FaqContainer = ({ item }: { item: IFaq }) => {
         className="flex w-full justify-between items-center cursor-pointer"
         onClick={() => setShow((prev) => !prev)}
       >
-        <p className="font-semibold text-2xl text-white mt-3">{item?.title}</p>
+        <p className="font-semibold text-md text-white mt-3">{item?.title}</p>
         {!show && <FiChevronDown color="white" size={25} />}
         {show && <FiChevronUp color="white" size={25} />}
       </div>
       {show && (
         <div className="mt-6 border-t-[1px] border-t-white pt-5">
-          <p>{item?.desription}</p>
+          <p className="text-sm text-gray-100">{item?.desription}</p>
         </div>
       )}
     </div>
@@ -26,13 +26,13 @@ const FaqContainer = ({ item }: { item: IFaq }) => {
 
 function FaqPage() {
   return (
-    <div className="w-full h-screen overflow-auto flex flex-col items-center">
-      <div className="xl:w-[50%] sm:w-full">
+    <div className="w-full h-auto ">
+      <div className="xl:w-[50%] sm:w-full mx-auto">
         <h3 className="text-center font-semibold text-2xl">
           Frequently Asked Questions
         </h3>
 
-        <div className="w-full h-[100px] pt-10">
+        <div className="w-full pt-10 self-center">
           {FaqData.map((item, index) => (
             <FaqContainer item={item} key={index.toString()} />
           ))}
