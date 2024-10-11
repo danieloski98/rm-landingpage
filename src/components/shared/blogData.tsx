@@ -27,7 +27,6 @@ export default function BlogData() {
           </p>
         </div>
         <div className=" flex items-center gap-3 ">
-          <div className=" bg-blue-800 rounded-full w-10 h-10 "></div>
           <div className=" ">
             <p className=" font-semibold text-sm leading-5 ">{item.author}</p>
             {/* <p className=' text-sm leading-5 ' >20 Jan 2024</p> */}

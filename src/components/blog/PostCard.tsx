@@ -37,7 +37,7 @@ export default function PostCard({
         </p>
 
         <div className="flex items-center mt-2 ">
-          <div className="ml-3">
+          <div className="">
             <p className="font-semibold text-[16px] text-[whitesmoke]">
               {item?.author}
             </p>

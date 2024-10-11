@@ -29,7 +29,7 @@ export default function Homelayout({
         <div
           className={` sm:w-[292px] lg:w-[834px] ${
             redbgHeight ?? "h-[182px]"
-          } rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-[20px] left-0 lg:left-[50px] `}
+          } rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-[0px] left-0 lg:left-[50px] `}
         />
       )}
       {children}

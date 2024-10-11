@@ -1,9 +1,6 @@
 import React from "react";
 import Homelayout from "../../shared/homelayout";
 import HeaderCompontent from "@/components/shared/header";
-import React from "react";
-import Homelayout from "../../shared/homelayout";
-import HeaderCompontent from "@/components/shared/header";
 
 export default function Firstsection() {
   return (
