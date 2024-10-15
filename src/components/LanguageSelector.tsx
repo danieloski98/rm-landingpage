@@ -26,7 +26,7 @@ export default function LanguageSelector() {
   return (
     <select
       onChange={(e) => handleLanguageChange(e.target.value)}
-      className="p-2 border rounded bg-transparent text-white"
+      className="p-2 rounded bg-transparent text-white"
     >
       {languages.map((lang) => (
         <option
