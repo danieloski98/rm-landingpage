@@ -6,7 +6,12 @@ import React from "react";
 export default function About() {
   return (
     <div className=" w-full lg:px-[50px] ">
-      <Homelayout first={true} redbgHeight=" lg:h-[182px] h-[51px]" showRbtc>
+      <Homelayout
+        first={true}
+        redbgHeight=" lg:h-[182px] h-[51px]"
+        width="lg:w-[851px]"
+        showRbtc
+      >
         <div className="w-[359px] h-[193px] bg-[#828282] absolute top-48 rounded-[16px] hidden lg:flex flex-col justify-end p-[20px] right-[100px]">
           <p className="text-md font-normal">
             The sun never sets on a RHEMA graduate preaching the word or God.

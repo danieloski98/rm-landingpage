@@ -63,7 +63,7 @@ export const navbarlinks = [
       },
       {
         name: "Login",
-        link: "https://www.google.com",
+        link: " https://www.dev.rhemamena.com/signin",
         external: true,
         isDisable: true,
       },
@@ -73,10 +73,10 @@ export const navbarlinks = [
   },
   {
     name: "RHEMA Connect",
-    link: "/connect",
+    link: "https://rhema-connect-nn4f.vercel.app/home",
     sublink: [],
     external: true,
-    isDisable: true,
+    isDisable: false,
   },
 ];
 
@@ -86,19 +86,19 @@ export const footerlinks = [
     linksdata: [
       {
         name: "MENA Campuses",
-        link: "",
+        link: "/training/about",
       },
       {
         name: "RHEMA Brazil",
-        link: "",
+        link: "https://rhema.org.br/",
       },
       {
         name: "RBTC",
-        link: "",
+        link: "https://rbtc.org",
       },
       {
         name: "RHEMA Europe",
-        link: "",
+        link: "https://rhema.eu/",
       },
     ],
   },
@@ -107,11 +107,11 @@ export const footerlinks = [
     linksdata: [
       {
         name: "Our purpose",
-        link: "",
+        link: "/training/about",
       },
       {
         name: "Mission & Vision",
-        link: "",
+        link: "#",
       },
       {
         name: "Values",
@@ -128,11 +128,11 @@ export const footerlinks = [
     linksdata: [
       {
         name: "Blog",
-        link: "",
+        link: "/training/blog",
       },
       {
-        name: "Alumin",
-        link: "",
+        name: "Alumini",
+        link: "https://www.dev.rhemamena.com/signin",
       },
     ],
   },
@@ -142,17 +142,17 @@ export const partnerlinks = [
   {
     name: "Sponsor a Student ",
     linkText: "$78 per month (based on RBTC Beirut)",
-    link: "",
+    link: "/partner/donate-online",
   },
   {
     name: "Partner Monthly",
     linkText: " Help see RHEMA expand throughout MENA",
-    link: "",
+    link: "/partner/dontae-online",
   },
   {
     name: "One Time Gift",
     linkText: "Give a one-time gift to RHEMA MENA",
-    link: "",
+    link: "/partner/donate-online",
   },
 ];
 

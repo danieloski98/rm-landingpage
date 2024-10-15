@@ -3,6 +3,7 @@ import React from "react";
 import Homelayout from "../shared/homelayout";
 import PrayerCard from "../shared/prayerCard";
 import Carousel from "./carousel";
+import Link from "next/link";
 
 export default function Herosection() {
   return (
@@ -42,9 +43,11 @@ export default function Herosection() {
               Join the MENA Prayer Meetings
             </p>
             <PrayerCard limit={true} />
-            <button className=" text-sm leading-[22px] border border-primary h-[38px] px-4 rounded-[32px] mt-11 ">
-              View all
-            </button>
+            <Link href="/training/prayers">
+              <button className=" text-sm leading-[22px] border border-primary h-[38px] px-4 rounded-[32px] mt-11 ">
+                View all
+              </button>
+            </Link>
           </div>
         </div>
       </div>

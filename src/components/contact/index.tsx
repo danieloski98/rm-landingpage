@@ -8,10 +8,10 @@ import Image from "next/image";
 export default function Contact() {
   const [open, setOpen] = useState(false);
   const [overlay, setOverlay] = useState(
-    " hidden fixed overflow-hidden inset-0 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0 ",
+    " hidden fixed overflow-hidden inset-0 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0 "
   );
   const [openModal, setOpenModal] = useState(
-    " opacity-0 scale-150 -translate-y-full z-[2000] transform relative mx-5 max-w-[640px] w-full bg-secondary05 rounded-[16px] shadow-lg transition-opacity transition-transform duration-300",
+    " opacity-0 scale-150 -translate-y-full z-[2000] transform relative mx-5 max-w-[640px] w-full bg-secondary05 rounded-[16px] shadow-lg transition-opacity transition-transform duration-300"
   );
 
   function clickHandler(value: boolean) {
@@ -19,7 +19,7 @@ export default function Contact() {
       setOverlay(overlay?.replace("hidden", "flex"));
       setTimeout(() => {
         setOpenModal(
-          openModal?.replace("opacity-0 scale-150 -translate-y-full ", ""),
+          openModal?.replace("opacity-0 scale-150 -translate-y-full ", "")
         );
       }, 100);
     } else {
@@ -68,8 +68,8 @@ export default function Contact() {
                         item?.name?.toLowerCase()?.includes("egypt")
                           ? "/images/contact/Egypt.png"
                           : item?.name?.toLowerCase()?.includes("lebanon")
-                            ? "/images/contact/Lebanon.png"
-                            : "/images/contact/Turkiye.png"
+                          ? "/images/contact/Lebanon.png"
+                          : "/images/contact/Turkiye.png"
                       }
                       width={18.67}
                       height={14}
@@ -81,13 +81,12 @@ export default function Contact() {
                 <div className=" flex gap-4 items-center ">
                   <LocationIcon />
                   <p className=" underline leading-6 text-sm ">Locate Campus</p>
-                  <p
-                    role="buttone"
-                    onClick={() => clickHandler(true)}
-                    className=" underline leading-6 text-sm "
+                  <a
+                    href="mailto:admin@rhemamena.com"
+                    className="underline leading-6 text-sm"
                   >
                     Send Message
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className=" w-[257px] gap-1 flex flex-col ">

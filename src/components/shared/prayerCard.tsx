@@ -53,13 +53,6 @@ export default function PrayerCard({ limit }: IProps) {
             {/* <LocationCard />
             <LocationCard /> */}
           </div>
-          {/* <div className=" w-[1px] h-[160px] lg:block hidden relative bg-secondary04 " />
-          <div className=" w-fit flex relative flex-col gap-6  ">
-            <LocationCard />
-            <LocationCard />
-            <LocationCard />
-            <LocationCard />
-          </div>
           <div className=" w-[1px] h-[160px] lg:block hidden relative bg-secondary04 " />
           <div className=" w-fit flex relative flex-col gap-6  ">
             <LocationCard />
@@ -73,7 +66,14 @@ export default function PrayerCard({ limit }: IProps) {
             <LocationCard />
             <LocationCard />
             <LocationCard />
-          </div> */}
+          </div>
+          <div className=" w-[1px] h-[160px] lg:block hidden relative bg-secondary04 " />
+          <div className=" w-fit flex relative flex-col gap-6  ">
+            <LocationCard />
+            <LocationCard />
+            <LocationCard />
+            <LocationCard />
+          </div>
         </div>
       )}
     </>

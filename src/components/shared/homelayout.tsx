@@ -7,12 +7,14 @@ export default function Homelayout({
   redbgHeight,
   first,
   showRbtc = false,
+  width = "lg:w-[534px]",
 }: Readonly<{
   children: React.ReactNode;
   hidemena?: boolean;
   redbgHeight?: string;
   first?: boolean;
   showRbtc?: boolean;
+  width?: string;
 }>) {
   return (
     <div className=" w-full relative ">
@@ -27,7 +29,7 @@ export default function Homelayout({
       )}
       {first && (
         <div
-          className={` sm:w-[292px] lg:w-[834px] ${
+          className={` sm:w-[292px] ${width} ${
             redbgHeight ?? "h-[182px]"
           } rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-[0px] left-0 lg:left-[50px] `}
         />
