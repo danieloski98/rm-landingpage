@@ -34,7 +34,7 @@ const NavLink = ({ name, link, sublink, external, isDisable }: INavlinks) => {
         {sublink.length < 1 && (
           <Link
             className={`font-semibold text-md ${
-              pathname.includes(name.toLowerCase())
+              pathname?.includes(name.toLowerCase())
                 ? "text-red-300"
                 : "text-white"
             }`}
@@ -70,7 +70,7 @@ const NavLink = ({ name, link, sublink, external, isDisable }: INavlinks) => {
           {sublink?.map((item, index) => (
             <Link
               className={`font-normal text-sm mb-3 ${
-                pathname.includes(name.toLowerCase())
+                pathname?.includes(name.toLowerCase())
                   ? "text-red-300"
                   : "text-white"
               }`}
