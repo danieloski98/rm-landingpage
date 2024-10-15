@@ -1,14 +1,15 @@
-import Formcomponent from '@/components/partnerpage/donation/formcomponent'
-import Enrollcomponent from '@/components/shared/enrollcomponent'
-import React from 'react'
+"use client";
+import Formcomponent from "@/components/partnerpage/donation/formcomponent";
+import Enrollcomponent from "@/components/shared/enrollcomponent";
+import React from "react";
 
 export default function DonateOnline() {
-    return (
-        <div className=' w-full lg:px-[50px]' >
-            <div className=" w-full " >
-                <Formcomponent />
-            </div>
-                <Enrollcomponent />
-        </div>
-    )
+  return (
+    <div className=" w-full lg:px-[50px]">
+      <div className=" w-full ">
+        <Formcomponent />
+      </div>
+      <Enrollcomponent />
+    </div>
+  );
 }
