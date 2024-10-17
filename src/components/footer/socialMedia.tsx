@@ -3,17 +3,17 @@ import Link from "next/link";
 import React from "react";
 
 export default function SocialMedia() {
-  return (
-    <div className=" flex gap-4 items-center ">
-      <Link href={" https://www.facebook.com/rhemamena"} target="_blank">
-        <FaceBookIcon />
-      </Link>
-      {/* <Link href={""} target="_blank" >
+    return (
+        <div className=' flex gap-4 items-center ' >
+            <Link href={""} target="_blank" >
+                <FaceBookIcon />
+            </Link>
+            <Link href={"https://www.instagram.com/rhema.mena?igsh=dmhrNXBrMGlrNmFi"} target="_blank" >
                 <InstagramIcon />
             </Link>
             <Link href={""} target="_blank" >
                 <YoutubeIcon />
-            </Link> */}
+            </Link>
     </div>
   );
 }
