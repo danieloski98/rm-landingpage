@@ -37,15 +37,17 @@ export default function Discoverapp() {
           Discover your Purpose with RHEMA
         </h2>
         <p>
-          The sun never sets on a Rhema graduate preaching the Word of God
+          The sun never sets on a RHEMA graduate preaching the Word of God
           &quot; <br /> - Kenneth W. Hagin
         </p>
         <div className=" flex relative z-10 gap-4 mt-4 w-full lg:w-auto lg:flex-row flex-col ">
           <button className=" text-sm leading-[22px] border border-primary h-[48px] lg:w-fit w-full lg:px-4 rounded-[8px] font-bold ">
-            Learn more about RHEMA
+            <a href="https://www.dev.rhemamena.com/signin/">
+              Learn more about RHEMA
+            </a>
           </button>
           <button className=" text-sm leading-[22px] border border-primary03 bg-primary03 h-[48px] lg:w-fit w-full lg:px-4 rounded-[8px] font-bold">
-            APPLY NOW!
+            <a href=" https://www.dev.rhemamena.com/register"> APPLY NOW! </a>
           </button>
         </div>
       </div>

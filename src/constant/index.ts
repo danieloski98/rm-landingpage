@@ -63,7 +63,7 @@ export const navbarlinks = [
       },
       {
         name: "Login",
-        link: "https://www.google.com",
+        link: " https://www.dev.rhemamena.com/signin",
         external: true,
         isDisable: true,
       },
@@ -73,32 +73,32 @@ export const navbarlinks = [
   },
   {
     name: "RHEMA Connect",
-    link: "/connect",
+    link: "https://rhema-connect-nn4f.vercel.app/home",
     sublink: [],
     external: true,
-    isDisable: true,
+    isDisable: false,
   },
 ];
 
 export const footerlinks = [
   {
-    title: "Rhema Campuses",
+    title: "RHEMA Campuses",
     linksdata: [
       {
         name: "MENA Campuses",
-        link: "",
+        link: "/training/about",
       },
       {
         name: "RHEMA Brazil",
-        link: "",
+        link: "https://rhema.org.br/",
       },
       {
         name: "RBTC",
-        link: "",
+        link: "https://rbtc.org",
       },
       {
         name: "RHEMA Europe",
-        link: "",
+        link: "https://rhema.eu/",
       },
     ],
   },
@@ -107,15 +107,19 @@ export const footerlinks = [
     linksdata: [
       {
         name: "Our purpose",
-        link: "",
+        link: "/training/about",
       },
       {
         name: "Mission & Vision",
-        link: "",
+        link: "#",
       },
       {
         name: "Values",
         link: "",
+      },
+      {
+        name: "FAQs",
+        link: "/faq",
       },
     ],
   },
@@ -124,11 +128,11 @@ export const footerlinks = [
     linksdata: [
       {
         name: "Blog",
-        link: "",
+        link: "/training/blog",
       },
       {
-        name: "Alumin",
-        link: "",
+        name: "Alumni",
+        link: "https://www.dev.rhemamena.com/signin",
       },
     ],
   },
@@ -136,19 +140,19 @@ export const footerlinks = [
 
 export const partnerlinks = [
   {
-    name: "Individual Partnership",
-    linkText: "Click here to sign up",
-    link: "",
+    name: "Sponsor a Student ",
+    linkText: "$78 per month (based on RBTC Beirut)",
+    link: "/partner/donate-online",
   },
   {
-    name: "Corporate Partnership",
-    linkText: "Click here to sign up",
-    link: "",
+    name: "Partner Monthly",
+    linkText: " Help see RHEMA expand throughout MENA",
+    link: "/partner/dontae-online",
   },
   {
-    name: "Donate to RHEMA MENA",
-    linkText: "Click here to Donate Now",
-    link: "",
+    name: "One Time Gift",
+    linkText: "Give a one-time gift to RHEMA MENA",
+    link: "/partner/donate-online",
   },
 ];
 
@@ -157,8 +161,8 @@ export const contactinfo = [
     name: "RHEMA LEBANON",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "+961 81 206 946",
+      name: "RHEMA Bible Training College",
+      contact_location: "Antelias, Mount Lebanon",
       email: "info@rhemalebanon.com",
     },
   },
@@ -166,20 +170,20 @@ export const contactinfo = [
     name: "RHEMA EGYPT",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
+      name: "RHEMA Bible Training College",
+      contact_location: "Antelias, Mount Lebanon - Lebanon",
       email: "info@rhemaegypt.com",
     },
   },
-  {
-    name: "RHEMA TURKEY",
-    details: "Reach us from anywhere in the Middle East & North Africa Region",
-    address: {
-      name: "RHEMA Lebanon Biblical training Center",
-      contact_location: "10 rue des lebanon, 34543 Beruit - Lebanon",
-      email: "lebanon@rhematurkey.com",
-    },
-  },
+  // {
+  //   name: "RHEMA TURKEY",
+  //   details: "Reach us from anywhere in the Middle East & North Africa Region",
+  //   address: {
+  //     name: "RHEMA Bible Training College",
+  //     contact_location: "Antelias, Mount Lebanon - Lebanon",
+  //     email: "lebanon@rhematurkey.com",
+  //   },
+  // },
 ];
 
 export const tuitionfee = [
