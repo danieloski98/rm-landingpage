@@ -112,7 +112,7 @@ export default function Footer() {
       <div className=" w-full lg:px-[116px]">
         <div className=" w-full lg:py-0 py-4 lg:h-[57px]  border-t border-secondary04 flex justify-center lg:justify-between lg:items-end  ">
           <p className=" leading-6 text-primary ">
-            © 2024 rhemamena. All rights reserved.
+            © 2024 RHEMA MENA. All rights reserved.
           </p>
           <div className=" lg:block hidden ">
             <SocialMedia />

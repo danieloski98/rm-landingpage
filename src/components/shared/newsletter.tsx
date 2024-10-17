@@ -10,7 +10,7 @@ export default function Newsletter() {
         <h6 className="font-bold text-lg leading-[28px]">
           Stay updated with our newsletter
         </h6>
-        <p className="text-sm leading-[22px] text-secondary02">Contact us</p>
+        <p className="text-sm leading-[22px] text-secondary02">Learn more about new events</p>
         <form
           action="https://club1040.us3.list-manage.com/subscribe/post?u=07e0e4691f28ae445bfce2160&amp;id=cbf8753dd3&amp;f_id=004b2ae2f0"
           method="post"

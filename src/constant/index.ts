@@ -131,7 +131,7 @@ export const footerlinks = [
         link: "/training/blog",
       },
       {
-        name: "Alumini",
+        name: "Alumni",
         link: "https://www.dev.rhemamena.com/signin",
       },
     ],

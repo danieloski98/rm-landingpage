@@ -116,7 +116,7 @@ export default function Navbar() {
           alt="nav"
         />
       </div>
-      <div className="w-[205px] h-[222px] bg-[#97979738] right-[250px] top-[100px] rounded-[16px] absolute" />
+      <div className="w-[216px] h-[222px] bg-[#97979738] right-[245px] top-[100px] rounded-[16px] absolute" />
       <div className=" w-full lg:py-0 py-3 flex justify-between lg:items-start items-center ">
         <Image src={"/images/logo.svg"} width={171} height={59} alt="logo" />
         <div className=" pr-24 hidden lg:flex gap-4 h-[56px] ">

@@ -35,8 +35,8 @@ export default function Herosection() {
           </div> */}
           <Carousel />
         </div>
-        <div className=" w-full relative mt-6 pt-[40px] lg:pt-[120px] ">
-          <div className=" w-[537px] h-[100px] lg:h-[182px] rounded-2xl bg-secondary10 absolute top-0 " />
+        <div className=" w-full relative mt-6 pt-[40px] lg:pt-[120px] pb-6 ">
+          <div className=" w-[537px] h-[100px] lg:h-[182px] rounded-b-2xl rounded-t-[10px] bg-secondary10 absolute top-[10px] left-[14px] " />
           <div className=" w-full relative z-10 lg:pl-20 ">
             <h2 className=" text-2xl leading-9 ">MENA Prayer Meetings</h2>
             <p className=" text-sm leading-[22px] ">

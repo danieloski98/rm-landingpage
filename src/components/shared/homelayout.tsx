@@ -17,7 +17,7 @@ export default function Homelayout({
   width?: string;
 }>) {
   return (
-    <div className=" w-full relative ">
+    <div className=" w-full relative pl-5">
       {!hidemena && (
         <Image
           className=" absolute lg:block hidden left-1 top-[230px] "
@@ -31,7 +31,7 @@ export default function Homelayout({
         <div
           className={` sm:w-[292px] ${width} ${
             redbgHeight ?? "h-[182px]"
-          } rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-[0px] left-0 lg:left-[50px] `}
+          } rounded-lg lg:rounded-2xl bg-primary03 z-10 absolute top-[0px] left-0 lg:left-[5px] `}
         />
       )}
       {children}
