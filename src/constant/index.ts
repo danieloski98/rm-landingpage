@@ -7,34 +7,14 @@ export const navbarlinks = [
     isDisable: false,
   },
   {
-    name: "Partners",
-    link: "/partner",
-    sublink: [
-      {
-        name: "Become a partner",
-        link: "/partner",
-        external: false,
-        isDisable: false,
-      },
-      {
-        name: "Donate",
-        link: "/partner/donate-online",
-        external: false,
-        isDisable: false,
-      },
-    ],
-    external: false,
-    isDisable: false,
-  },
-  {
-    name: "Contact",
+    name: "Locations",
     link: "/contact",
     sublink: [],
     external: true,
     isDisable: false,
   },
   {
-    name: "RHEMA Bible Training College",
+    name: "Be Trained",
     link: "/training",
     sublink: [
       {
@@ -76,6 +56,26 @@ export const navbarlinks = [
     link: "https://rhema-connect-nn4f.vercel.app/home",
     sublink: [],
     external: true,
+    isDisable: false,
+  },
+  {
+    name: "Partners",
+    link: "/partner",
+    sublink: [
+      {
+        name: "Become a partner",
+        link: "/partner",
+        external: false,
+        isDisable: false,
+      },
+      {
+        name: "Donate",
+        link: "/partner/donate-online",
+        external: false,
+        isDisable: false,
+      },
+    ],
+    external: false,
     isDisable: false,
   },
 ];
@@ -158,7 +158,7 @@ export const partnerlinks = [
 
 export const contactinfo = [
   {
-    name: "RHEMA LEBANON",
+    name: "RHEMA Lebanon",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
       name: "RHEMA Bible Training College",

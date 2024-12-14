@@ -10,14 +10,14 @@ export default function Discoverapp() {
           Come And Grow With <br /> The RHEMA MENA Community
         </h1>
         <p className=" leading-6 ">
-          A 45+ year history of success. Carrying the banner of faith to <br />{" "}
+          A 50+ year history of success. Carrying the banner of faith to <br />{" "}
           this generation! come and grow with us!
         </p>
         <div className=" relative w-full rounded-2xl bg-primary03 lg:h-[228px] mt-6 lg:pl-14 flex lg:flex-row flex-col items-center justify-between lg:gap-0 gap-6  ">
           <div className=" w-full ">
-            <h2 className=" text-5xl leading-[64px] font-bold ">45yrs</h2>
+            <h2 className=" text-5xl leading-[64px] font-bold ">50yrs</h2>
             <p className=" font-medium leading-6 ">
-              Of Growing leaders for Jesus christ
+              Of growing leaders for Jesus Christ
             </p>
           </div>
           <div className=" w-full ">
@@ -27,8 +27,8 @@ export default function Discoverapp() {
             </p>
           </div>
           <div className=" w-full ">
-            <h2 className=" text-5xl leading-[64px] font-bold ">116k+</h2>
-            <p className=" font-medium leading-6 ">Graduated Student </p>
+            <h2 className=" text-5xl leading-[64px] font-bold ">128k+</h2>
+            <p className=" font-medium leading-6 ">Graduated students</p>
           </div>
         </div>
       </div>

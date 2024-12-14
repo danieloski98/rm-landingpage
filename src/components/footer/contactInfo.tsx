@@ -1,6 +1,5 @@
 import React from 'react'
-import Newsletter from '../shared/newsletter'
-import { AppleStore, GooglePlayStore } from '@/svg'
+import Newsletter from '../shared/newsletter' 
 import { usePathname } from 'next/navigation'
 import DownloadApp from './downloadApp'
 

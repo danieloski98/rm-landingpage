@@ -156,7 +156,7 @@ export default function Navbar() {
               >
                 <div className=" pt-8 ">
                   {show === item?.name && (
-                    <div className=" w-full px-4 py-3 mt-3 flex flex-col bg-secondary10 relative z-30 gap-2 rounded-2xl ">
+                    <div className=" w-full px-4 py-3 mt-3 flex flex-col bg-secondary10 relative z-30 gap-2 rounded-2xl shadow-lg ">
                       {item?.sublink?.map((subitem, subindex) => (
                         <Link
                           className={` ${
