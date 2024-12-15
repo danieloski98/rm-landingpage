@@ -23,7 +23,7 @@ export default function Discoverapp() {
           <div className=" w-full ">
             <h2 className=" text-5xl leading-[64px] font-bold ">1k+</h2>
             <p className=" font-medium leading-6 ">
-              Years of instructor experience
+              Experienced instructor
             </p>
           </div>
           <div className=" w-full ">

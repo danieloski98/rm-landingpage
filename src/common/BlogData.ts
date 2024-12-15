@@ -3,6 +3,7 @@ export interface IBlogData {
     description: string;
     image: string;
     author: string;
+    link: string
 }
 
 export const BLOG_DATA: IBlogData[] = [
@@ -56,6 +57,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         image: 'https://res.cloudinary.com/daphgn5rw/image/upload/v1728488798/ozaadr0k7tstl7jhlyq8.jpg',
         author: 'Kenneth W. Hagin',
+        link: "https://rhema.eu/index.php/right-now/news/154-january-2023"
     },
     {
         title: `It's Goal-Setting Time: Run to Win`,
@@ -90,6 +92,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: 'Julie Beemer, RHEMA Middle East, North Africa',
         image: 'https://res.cloudinary.com/daphgn5rw/image/upload/v1728489027/j6hwsugvtz7owvhoiulg.jpg',
+        link: "https://rhema.eu/index.php/right-now/news/185-october-2024"
     },
     {
         title: `Are You Marching?`,
@@ -121,6 +124,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Kenneth W. Hagin`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489100/r2php70duizvdapoar7o.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/181-june-2024"
     },
     {
         title: `Releasing the Rivers of God's Spirit`,
@@ -141,6 +145,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Ps. Larry Mills`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728488922/w56fdevqey9j2jn2ixhi.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/158-may-2023"
     },
     {
         title: `On Following Jesus and Endless Alternatives`,
@@ -169,6 +174,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Timo Anzalone, RBTC Instructor`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489180/q6ye1altsrbamdw6kqp2.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/184-september-2024"
     },
     {
         title: `Asking Boldly in This Hour`,
@@ -190,6 +196,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Helen Dresel`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489243/mwtepvkbvvvjv2d5gerq.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/180-may-2024"
     },
     {
         title: `The Importance of Becoming a Team`,
@@ -231,6 +238,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `David Scholing`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489368/tux6einguv0comp8uai2.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/178-march-2024"
     },
     {
         title: `Adding Strength`,
@@ -245,6 +253,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Jim Rogahn`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489516/awrn5tovrfk4c5xn3vym.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/176-february-2024"
     },
     {
         title: `A Life of Praise`,
@@ -271,6 +280,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Amy Duininck`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728489597/eisqydwhu4qtwbh8kdim.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/173-november-2023"
     }, 
     {
         title: `Praying for God’s Will in Your Life`,
@@ -291,6 +301,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Michelle Grunewald`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728551187/khroxcicptxak47wcfgr.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/161-august-2023"
     },
     {
         title: `The Anointing is Not Your Short Cut`,
@@ -324,6 +335,7 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Tony Cooke`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728551194/jnualpjbeatm3vjwqdsi.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/172-october-2023"
     },
     {
         title: `Knowing the Love of God`,
@@ -344,5 +356,6 @@ export const BLOG_DATA: IBlogData[] = [
         `,
         author: `Linda Clementz`,
         image: `https://res.cloudinary.com/daphgn5rw/image/upload/v1728551194/efmck7ei3hptheqqsofs.jpg`,
+        link: "https://rhema.eu/index.php/right-now/news/156-march-2023"
     }
 ];

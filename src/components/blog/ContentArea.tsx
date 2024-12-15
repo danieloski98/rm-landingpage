@@ -19,12 +19,14 @@ export default function ContentArea() {
   }, [page]);
   return (
     <div className="w-full h-auto flex justify-center mt-20">
-      <div className="sm:w-full lg:w-[50%] flex flex-col sm:px-3 lg:px-0">
-        {BLOG_DATA.map((item, index) => (
-          <PostCard item={item} index={index} key={index.toString()} />
-        ))}
+      <div className="sm:w-full lg:max-w-[900px] w-full flex flex-col sm:px-3 lg:px-0">
+        <div className=" w-full flex flex-col gap-6 " >
+          {BLOG_DATA.map((item, index) => (
+            <PostCard item={item} index={index} key={index.toString()} />
+          ))}
+        </div>
 
-        <div className="w-full border-t-2 border-t-white py-6 flex justify-between">
+        {/* <div className="w-full border-t-2 border-t-white py-6 flex justify-between">
           <div
             onClick={handleBackward}
             className="sm:flex lg:hidden w-12 h-12 bg-white rounded-lg justify-center items-center"
@@ -46,14 +48,12 @@ export default function ContentArea() {
                 <div
                   key={index.toString()}
                   onClick={() => setPage(index)}
-                  className={`w-14 h-14 rounded-md flex justify-center items-center ${
-                    page === index && "bg-white"
-                  } cursor-pointer`}
+                  className={`w-14 h-14 rounded-md flex justify-center items-center ${page === index && "bg-white"
+                    } cursor-pointer`}
                 >
                   <p
-                    className={`font-semibold text-xl ${
-                      page === index && "text-black"
-                    }`}
+                    className={`font-semibold text-xl ${page === index && "text-black"
+                      }`}
                   >
                     {index + 1}
                   </p>
@@ -81,7 +81,7 @@ export default function ContentArea() {
           >
             <ArrowRight size={"30px"} variant="Outline" color="black" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

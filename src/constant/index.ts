@@ -52,8 +52,8 @@ export const navbarlinks = [
     isDisable: false,
   },
   {
-    name: "RHEMA Connect",
-    link: "https://rhema-connect-nn4f.vercel.app/home",
+    name: "Free Resources",
+    link: "https://rhemaconnect.com/",
     sublink: [],
     external: true,
     isDisable: false,
@@ -93,7 +93,7 @@ export const footerlinks = [
         link: "https://rhema.org.br/",
       },
       {
-        name: "RBTC",
+        name: "RHEMA USA",
         link: "https://rbtc.org",
       },
       {
@@ -147,7 +147,7 @@ export const partnerlinks = [
   {
     name: "Partner Monthly",
     linkText: " Help see RHEMA expand throughout MENA",
-    link: "/partner/dontae-online",
+    link: "/partner/donate-online",
   },
   {
     name: "One Time Gift",
@@ -162,17 +162,17 @@ export const contactinfo = [
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
       name: "RHEMA Bible Training College",
-      contact_location: "Antelias, Mount Lebanon",
-      email: "info@rhemalebanon.com",
+      // contact_location: "Antelias, Mount Lebanon",
+      email: "admin@rhemamena.com",
     },
   },
   {
-    name: "RHEMA EGYPT",
+    name: "RHEMA Egypt",
     details: "Reach us from anywhere in the Middle East & North Africa Region",
     address: {
       name: "RHEMA Bible Training College",
-      contact_location: "Antelias, Mount Lebanon - Lebanon",
-      email: "info@rhemaegypt.com",
+      // contact_location: "Antelias, Mount Lebanon - Lebanon",
+      email: "admin@rhemamena.com",
     },
   },
   // {

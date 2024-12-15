@@ -51,7 +51,7 @@ export default function About() {
               become catalysts for Godly change in their families, communities,
               cities, and nations. Societal Leaders include Business Owners and
               Executives, Health Care Providers, Educators, Media influencers,
-              Public Servants, and even moms and dads who influence their
+              Public Servants, and even Moms and Dads who influence their
               families and communities for Christ. These also work to use their
               resources, talents, and influence to support God's Church.
               `}

@@ -6,7 +6,7 @@ export default function Firstsection() {
   return (
     <Homelayout first={true} redbgHeight=" lg:h-[107px] h-[51px] ">
       <div className=" w-full text-primary lg:pl-[116px] z-10 relative py-[10px] ">
-        <HeaderCompontent title="Become a Partner" body="Partnership" />
+        <HeaderCompontent title="Become a Partner" body="" />
         <div className=" w-full pt-16 flex flex-col ">
           <h3 className=" text-center font-bold text-lg lg:text-[32px] lg:mx-auto lg:w-fit leading-[18px] lg:leading-[48px] pb-1 border-b border-primary03 ">
             A LETTER TO OUR PARTNERS FROM KENNETH W. HAGIN

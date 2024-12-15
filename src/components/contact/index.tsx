@@ -96,9 +96,9 @@ export default function Contact() {
                 <p className=" text-xs leading-[22px] ">
                   {item?.address?.name}
                 </p>
-                <p className=" text-xs leading-[22px] ">
+                {/* <p className=" text-xs leading-[22px] ">
                   {item?.address?.contact_location}
-                </p>
+                </p> */}
                 <p className=" text-xs leading-[22px] ">
                   Email: {item?.address?.email}
                 </p>
@@ -115,9 +115,9 @@ export default function Contact() {
             life.
           </p>
 
-          <button className="w-full lg:w-[137px] h-[48px] rounded-[8px] bg-[#BE0027] text-white text-[15px] font-semibold mt-8">
+          <a href="https://www.dev.rhemamena.com/register" className="w-full lg:w-[137px] h-[48px] flex justify-center items-center rounded-[8px] bg-[#BE0027] text-white text-[15px] font-semibold mt-8">
             APPLY NOW!
-          </button>
+          </a>
         </div>
       </div>
 

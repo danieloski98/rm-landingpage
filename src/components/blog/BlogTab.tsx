@@ -11,7 +11,7 @@ interface IProps {
 
 export default function BlogTab({ onClick, value }: IProps) {
   return (
-    <div className="flex-col">
+    <div className="flex-col ">
       <div className=" sm:w-full lg:w-[40%] sm:h-[40px] lg:h-[50px] flex lg:pl-16 pt-4 sm:bg-[#212B36] lg:bg-transparent px-3 z-[1000]">
         {tabItems.map((item, index) => (
           <div
